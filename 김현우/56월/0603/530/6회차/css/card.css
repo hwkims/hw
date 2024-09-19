@@ -1,0 +1,22 @@
+/*초기설정*/
+
+* { padding: 0; margin: 0;} /*여백초기화*/
+a { text-decoration: none;} /*링크 밑줄 제거*/
+
+#wrap {width: 740px; margin: 0 auto;}
+
+#logo {width: 740px; height: 81px; background: yellow;}
+#top {width: 740px; height: 108px; background: pink;}
+#main {width: 740px; height: 505px; background: yellow;}
+
+#info {width: 740px; height: 233px; background: pink;}
+
+#info p {width: 246px; height: 233px; background: cyan; float: left;}
+
+#info p.box1 {background: red;}
+#info p.box2 {background: green;}
+#info p.box3 {width: 248px; background: orange;}
+
+#down {width: 740px; height: 73px; background: yellow;}
+
+#down_logo {width: 740px; height: 70px; background: pink;}

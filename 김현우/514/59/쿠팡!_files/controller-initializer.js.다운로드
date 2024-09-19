@@ -1,0 +1,2 @@
+define(["jquery","common/utils/validationUtils","common/essentialData"],function($,validator,data){var controller=data.getController();if(controller!=="subscriptionProduct"&&data.isSubscribable())controller="subscriptionDetail";coupangWebRequire(["../page-controllers/common/controller"]);if(validator.isNotEmpty(controller))coupangWebRequire(["../page-controllers/"+controller+"/controller"],function(){var profile=data.getProfile();if(profile=="develop"||profile=="integration")$("body").attr("loadjs",
+"success")});if(typeof JSON!=="object")coupangWebRequire(["json2"])});

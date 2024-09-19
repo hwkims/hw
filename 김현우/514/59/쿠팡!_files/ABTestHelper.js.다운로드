@@ -1,0 +1,2 @@
+define(["jquery","common/essentialData","common/utils/validationUtils"],function($,data,validator){var ABTestHelper=function(option){this.testKey=option.testKey;this.testOption=data.getAbTestOptionByKey(option.testKey)};ABTestHelper.prototype={getAbTestOptionByKey:function(){return this.testOption},logging:function(){if(validator.isEmpty(this.testKey))return;$.ajax({url:"//www.coupang.com/np/abtest/logging/"+this.testKey,dataType:"jsonp"})},loggingOnce:function(){var executed=false;return function(){if(!executed){executed=
+true;this.logging()}}}()};return ABTestHelper});

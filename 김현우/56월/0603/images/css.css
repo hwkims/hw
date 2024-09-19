@@ -1,0 +1,52 @@
+#head{
+         width: 600px;
+         height: 100px;   
+}
+.logo img{
+    width: 30%;
+    margin-right: 100px;
+}
+#head p{
+    font-size: large;
+    display: inline;
+    text-align: right;
+}
+#head line{
+    width: 1px;
+    height: 10px;
+    background-color: aqua;
+}
+#btn{
+    
+    width: 600px;
+    height: 200px;
+}
+.btn1 {
+    border-radius: 30px;
+    background-color: black;
+    width: 150px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px ;
+    color: white;
+    font-size: large;
+    font-weight: 900;
+    display: inline-block;
+}
+.btn1 a:hover{
+    color: aliceblue;
+
+}
+
+.btn2 {
+    border-radius: 30px;
+    background-color: orange;
+    width: 150px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px ;
+    color: white;
+    font-size: large;
+    font-weight: 900;
+    display: inline-block;
+}

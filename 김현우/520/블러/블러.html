@@ -1,0 +1,30 @@
+<style>
+    .sample_cousor{
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+    transform: translate(-50%, -50%);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(3px);
+    background: rgba(255, 255, 255, 0.05);
+    position: fixed;
+    border-radius: 50%;
+    aspect-ratio: 1;
+    z-index: 9;
+    width: 60px;
+    cursor: none;
+}
+.cursor-png {
+	cursor: url("https://apost.dev/content/images/2023/12/img-81.png"), auto;
+}
+</style>
+
+<script>
+    const cousor = document.querySelector('.sample_cousor');
+ 
+     const animateCursor = (e) => {
+         cousor.style.left = `${e.pageX}px`;
+         cousor.style.top = `${e.pageY}px`;
+     }
+     window.addEventListener('mousemove', animateCursor);
+ </script>
+
+ <div class="sample_cousor"></div>

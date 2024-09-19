@@ -1,0 +1,16 @@
+https://transfonter.org/ 
+
+1. add fonts 클릭후 컴퓨터에서 원하는 폰트 추가
+2. Convert로 변환후 다운로드(작업폴더에 압축풀기)
+3. 폴더이름 font로 변경 및 폴더 안에 stylesheet.css 메모장으로 열기
+4. 해당 소스 복사 후 본인 css파일 맨 위에 붙여넣기
+5. url 부분 본인 환경에 맞게 변경하기
+6. 글자 적용 원하는 곳에 font-family 붙여넣기
+-------------------------
+예> src: url('MoebiusKorea-Bold.woff2') format('woff2'),
+
+현재 위치에는 글꼴이 없는상태이므로
+
+수정 예시 > src: url('../font/MoebiusKorea-Bold.woff2') format('woff2'),
+
+../(뒤로가기)후 폰트폴더에 가서 파일 불러오게 수정하기

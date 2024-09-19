@@ -1,0 +1,402 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+* {
+    text-decoration: none;
+}
+
+img {
+    vertical-align: middle;
+}
+
+/*상단*/
+#top {
+    width: 1200px;
+    height: 500px;
+    background: yellow;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#top h2 {
+    padding-top: 50px;
+
+    color: #333;
+    font-size: 28px;
+    letter-spacing: -2px;
+}
+
+#top div {
+    width: 360px;
+    height: 360px;
+    background: cyan;
+    display: inline-block;
+    vertical-align: middle;
+
+    margin: 20px 10px;
+    text-align: left;
+
+    /* border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 10px; */
+
+    border-radius: 10px 10px 10px 50px;
+
+}
+
+#top div.box1 {
+    background: #dde2e8;
+}
+
+#top div.box1 p.btn {
+    width: 65px;
+    height: 25px;
+    border: 1px solid #333;
+
+    margin-top: 80px;
+    margin-left: 30px;
+
+    font-size: 12px;
+    letter-spacing: -1px;
+
+    text-align: center;
+    line-height: 25px;
+}
+
+#top div.box1 h2 {
+    padding-top: 10px;
+    padding-left: 30px;
+
+    color: #333;
+    font-size: 28px;
+    letter-spacing: -2px;
+
+}
+
+#top div.box1 p.txt {
+    padding-top: 10px;
+    padding-left: 30px;
+
+    color: #666;
+    font-size: 16px;
+    letter-spacing: -1px;
+}
+
+/*2번*/
+#top div.box2 {
+    background: #c3eefe;
+}
+
+#top div.box2 p.btn {
+    width: 65px;
+    height: 25px;
+    border: 1px solid #333;
+
+    margin-top: 80px;
+    margin-left: 30px;
+
+    font-size: 12px;
+    letter-spacing: -1px;
+
+    text-align: center;
+    line-height: 25px;
+
+    opacity: 0;
+    /*숨기기*/
+}
+
+#top div.box2 h2 {
+    padding-top: 10px;
+    padding-left: 30px;
+
+    color: #333;
+    font-size: 28px;
+    letter-spacing: -2px;
+
+}
+
+#top div.box2 p.txt {
+    padding-top: 10px;
+    padding-left: 30px;
+
+    color: #666;
+    font-size: 16px;
+    letter-spacing: -1px;
+}
+
+
+
+/*3번*/
+#top div.box3 {
+    background: #ffe99d;
+}
+
+#top div.box3 p.btn {
+    width: 65px;
+    height: 25px;
+    border: 1px solid #333;
+
+    margin-top: 80px;
+    margin-left: 30px;
+
+    font-size: 12px;
+    letter-spacing: -1px;
+
+    text-align: center;
+    line-height: 25px;
+}
+
+#top div.box3 h2 {
+    padding-top: 10px;
+    padding-left: 30px;
+
+    color: #333;
+    font-size: 28px;
+    letter-spacing: -2px;
+
+}
+
+#top div.box3 p.txt {
+    padding-top: 10px;
+    padding-left: 30px;
+
+    color: #666;
+    font-size: 16px;
+    letter-spacing: -1px;
+}
+
+
+/*중단*/
+#middle{
+    width: 1200px; height: 500px;
+    background: pink;
+    margin: 50px auto;
+    text-align: center;
+}
+
+#middle div.box {
+    width: 370px; height: 165px;
+    border: 1px solid red;
+
+    display: inline-block;
+    vertical-align: middle;
+
+    margin: 30px 10px;
+}
+
+#middle div.box div { 
+    display: inline-block; 
+    vertical-align: middle;
+}
+
+#middle div.box div.left {
+    width: 165px; height: 165px;
+    background: orange;
+}
+
+#middle div.box div.right {
+    width: 195px; height: 165px;
+    background: orange;
+    text-align: left;
+}
+
+#middle div.box div.right p.txt1 {
+    padding-top: 10px; padding-left: 10px;
+
+    color:#333; font-size: 14px;
+    letter-spacing: -1px;
+}
+#middle div.box div.right p.txt1 span {
+    font-weight: bold;
+}
+
+#middle div.box div.right p.txt2 {
+    padding-top: 10px; padding-left: 10px;
+
+    color:#333; font-size: 16px;
+    letter-spacing: -1px;
+    font-weight: bold;
+
+}
+
+#middle div.box div.right p.txt2 span {
+    font-weight: normal;
+    font-size: 12px;
+}
+
+#middle div.box div.right p.icon {
+    padding-top: 30px;
+    padding-left: 120px;
+
+    cursor: pointer; /*손가락 모양표시*/
+}
+
+
+/*하단*/
+#down {
+    width: 1200px; height: 400px;
+    background: cyan;
+    margin: 50px auto;
+    text-align: center;
+}
+
+#down h1 {
+    padding-top: 30px;
+
+    color:#333; font-size: 24px;
+    letter-spacing: -2px;
+}
+
+#down h3 {
+    padding-top: 10px;
+
+    color:#666; font-size: 16px;
+    letter-spacing: -1px;
+    font-weight: normal;
+}
+
+#down div {
+    width: 550px; height: 240px;
+    background: orange;
+
+    display: inline-block;
+    vertical-align: middle;
+
+    margin: 25px 10px;
+    text-align: left;
+}
+#down div.box1 {
+    background: url(../images/down_banner_bg1.jpg);
+}
+
+#down div.box1 h2 {
+    padding-top: 40px;
+    padding-left: 20px;
+
+    color:#fff; font-size: 30px;
+    letter-spacing: -3px;
+}
+#down div.box1 p.btn {
+    width: 200px;
+    height: 35px;
+    background: #2f7117;
+
+    margin-top: 20px;
+    margin-left: 20px;
+
+    text-align: center;
+    line-height: 35px;
+
+    color:#fff; font-size: 18px;
+    letter-spacing: -1px;
+}
+
+
+#down div.box2 {
+    background: url(../images/down_banner_bg2.jpg);
+}
+
+#down div.box2 h2 {
+    padding-top: 40px;
+    padding-left: 20px;
+
+    color:#fff; font-size: 30px;
+    letter-spacing: -3px;
+}
+#down div.box2 p.btn {
+    width: 200px;
+    height: 35px;
+    background: #d14e0e;
+
+    margin-top: 20px;
+    margin-left: 20px;
+
+    text-align: center;
+    line-height: 35px;
+
+    color:#fff; font-size: 18px;
+    letter-spacing: -1px;
+}
+
+/*가성비 장보기*/
+#etc {
+    width: 1200px; 
+    background: yellow;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#etc h2 {
+    padding-top: 30px;
+    padding-left: 30px;
+
+    color:#333;
+    font-size: 24px;
+    letter-spacing: -2px;
+
+    text-align: left;
+}
+
+#etc h4 {
+    padding-top: 10px;
+    padding-left: 30px;
+
+    color:#666;
+    font-size: 16px;
+    letter-spacing: -1px;
+    font-weight: normal;
+
+    text-align: left;
+}
+
+#etc div.box {
+    width: 350px; height: 460px;
+    border: 1px solid red;
+
+    display: inline-block;
+    vertical-align: middle;
+
+    margin: 40px 15px;
+    text-align: left;
+}
+
+#etc div.box p.btn {
+    width: 110px; height: 25px;
+    background: green;
+
+    margin-top: 20px;
+
+    color:#fff; font-size: 14px;
+    font-weight: bold;
+    letter-spacing: -1px;
+
+    text-align: center;
+    line-height: 25px;
+}
+#etc div.box p.btn1 {
+    width: 70px; height: 25px;
+    background: #e42910;
+
+    margin-top: 20px;
+
+    color:#fff; font-size: 14px;
+    font-weight: bold;
+    letter-spacing: -1px;
+
+    text-align: center;
+    line-height: 25px;
+}
+
+#etc div.box p.txt {
+    padding-top: 20px;
+
+    color:#666; font-size: 16px;
+    letter-spacing: -1px;
+}
+#etc div.box p.txt span {
+    color:#333;
+    font-weight: bold;
+}

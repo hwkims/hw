@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>커서 테스트</title>
+    <style>
+        div {
+            font-size: 1.5em;
+            line-height: 2;
+        }
+        div.cursor-default {
+            cursor: default;
+        }
+        div.cursor-pointer {
+            cursor: pointer;
+        }
+        div.cursor-text {
+            cursor: text;
+        }
+        div.cursor-auto {
+            cursor: auto;
+        }
+        div.cursor-none {
+            cursor: none;
+        }
+        div.cursor-wait {
+            cursor: wait;
+        }
+		.cursor-emoji { 
+    cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='40' height='48' viewport='0 0 100 100' style='fill:black;font-size:24px;'><text y='50%'>?</text></svg>") 16 0, auto;
+}
+    </style>
+</head>
+<body>
+    <div class="cursor-default">기본 커서</div>
+    <div class="cursor-pointer">하이퍼링크 커서</div>
+    <div class="cursor-text">입력 커서</div>
+    <div class="cursor-auto">자동 커서</div>
+    <div class="cursor-none">커서 감춤</div>
+    <div class="cursor-wait">대기중 커서</div>
+</body>
+</html>

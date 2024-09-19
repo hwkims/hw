@@ -1,0 +1,243 @@
+* { padding: 0; margin: 0;}
+a { text-decoration: none;}
+
+/*메뉴&로고*/
+#header {
+    width: 1200px; height: 85px;
+    margin: 0 auto;
+}
+
+#header p {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+#header p a {
+    color:#666; font-size: 18px;
+    letter-spacing: -1px;
+
+    margin: 0 40px;
+}
+
+#header p:hover a {
+    color:#243b87;
+    text-decoration: underline;
+}
+
+/*메인이미지*/
+#main {
+    width: 1200px; height: 470px;
+    background: url(../images/main_bg.jpg);
+    margin: 0 auto;
+    text-align: center;
+}
+
+#main p.title {
+    padding-top: 100px;
+    color:#fff; font-size: 34px;
+    letter-spacing: -1px;
+    text-transform: uppercase; /*글자를 대문자로*/
+}
+
+#main p.title span {
+    font-weight: bold;
+}
+
+#main p.line {
+    width: 90px; height: 1px;
+    background: #fff;
+
+    margin: 50px auto;
+
+}
+#main h4 {
+    color:#fff; font-size: 18px;
+    letter-spacing: -1px;
+    font-weight: normal;
+}
+#main p.btn {
+    width: 190px; height: 40px;
+    border: 1px solid #fff;
+    margin: 0 auto;
+    margin-top: 50px;
+
+    line-height: 40px;
+
+    color:#fff;
+    letter-spacing: -1px;
+    cursor: pointer;
+
+}
+#main p.btn:hover {
+    background: #243b87;
+}
+
+/*우리동네 매장배너*/
+#banner {
+    width: 1200px; height: 220px;
+    background: url(../images/center_banner_bg.jpg);
+    margin: 50px auto;
+}
+
+#banner h2 {
+    padding-top: 30px;
+    padding-left: 280px;
+
+    color:#243b87;
+    font-size: 28px;
+    letter-spacing: -2px;
+}
+
+#banner p.line {
+    width: 30px; height: 2px;
+    background: #243b87;
+
+    margin-top: 10px;
+    margin-left: 450px;
+}
+
+#banner p.txt {
+    padding-top: 10px;
+    padding-left: 240px;
+
+    color:#555;
+    font-size: 26px;
+    letter-spacing: -2px;
+}
+#banner p.txt span {
+    font-weight: bold;
+}
+
+#banner p.btn {
+    width: 170px; height: 45px;
+    background: #243b87;
+
+    margin-top: 20px;
+    margin-left: 380px;
+
+    text-align: center;
+    line-height: 45px;
+
+    color:#fff; letter-spacing: -1px;
+    font-weight: bold; cursor: pointer;
+}
+
+/*ccm이란*/
+#ccm {
+    width: 1200px; height: 700px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#ccm h2 {
+    padding-top: 20px;
+
+    color:#222; font-size: 24px;
+    letter-spacing: -2px;
+}
+
+#ccm p.line {
+    width: 15px; height: 5px;
+    background: #222;
+    margin: 20px auto;
+}
+
+#ccm p.txt {
+    color:#666; letter-spacing: -1px;
+}
+#ccm p.img {
+    padding-top: 30px;
+}
+
+/*3단배너*/
+#info {
+    width: 1200px; height: 250px;
+    background: yellow;
+    margin: 50px auto;
+    text-align: center;
+}
+
+#info div.box {
+    width: 270px; height: 250px;
+    background: cyan;
+
+    display: inline-block;
+    vertical-align: middle;
+
+    margin: 0 20px;
+}
+
+#info div.box p.img {
+    padding-top: 20px;
+}
+#info div.box h2 {
+    color:#012f6d;
+    font-size: 18px;
+    letter-spacing: -1px;
+}
+#info div.box p.txt {
+    padding-top: 20px;
+    color:#666;
+    font-size: 13px;
+    letter-spacing: -1px;
+}
+#info div.box p.txt span {
+    color:#2e71c8;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+#info div.box p.btn {
+    width: 85px; height: 30px;
+    background: #012f6d;
+
+    margin: 15px auto;
+
+    line-height: 30px;
+    color:#fff; font-size: 13px;
+    letter-spacing: -1px;
+
+    border-radius: 5px;
+    cursor: pointer;
+
+}
+
+/*소비자분쟁 테이블*/
+#down {
+    width: 1200px; height: 530px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#down h2 {
+    padding-top: 20px;
+
+    color:#222; font-size: 24px;
+    letter-spacing: -2px;
+}
+
+#down p.line {
+    width: 15px; height: 5px;
+    background: #222;
+    margin: 20px auto;
+}
+
+#down table {
+    border-collapse: collapse; 
+    margin: 0 auto;
+}
+#down table td {
+    border: 1px solid red;
+    
+    height: 50px;
+    font-size: 14px;
+    color:#555;
+    letter-spacing: -1px;
+}
+#down table td.title {
+    background: #f5f5f5;
+    color:#333; font-weight: bold;
+}
+#down table td.last {
+    height: 90px;
+}

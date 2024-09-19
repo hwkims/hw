@@ -1,0 +1,140 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+img{
+    vertical-align :middle ;
+}
+
+/* 전체 */
+#wrap{
+    width: 700px;
+    margin: 0 auto;
+}
+
+/* 메인 */
+#main{
+    width: 700px;
+    height: 400px;
+    /* background: red; */
+    /* text-align: center; */
+}
+#main p{
+    display: inline-block;
+  /* line-height: 400px; */
+} 
+#main p{padding-right: 20px;
+    
+
+
+/* 상단로고&메뉴 */
+#header {width: 700px; height: 100px; 
+    /* background: yellow; */
+    /* text-align: center; */
+}
+#header p{
+    display: inline-block;
+  /* line-height: 100px; */
+} 
+#header p{padding-right: 20px;}
+#header p a{ color: #333; font-size: 18px; font-weight: bold;
+    letter-spacing: -1px;}
+    #header p a:hover{ color: red;}
+
+#mainimg   {
+    width: 700px;
+    height: 707px;
+    background: pink;
+}
+#main_down{
+    width: 700px;
+    height: 193px;
+    background: yellow;
+}
+#main_down p{float: left;
+}
+#main_down p.box1{
+   width: 513px;
+   height: 193px;
+   background: cyan;
+}
+#main_down p.box2{
+    width: 187px;
+    height: 193px;
+    background: red;
+ }
+#info_title{
+    width: 700px;
+    height: 193px;
+    background: yellow;
+}
+#info{
+    width: 700px;
+    height: 193px;
+    background: yellow;
+}
+#movie{
+    width: 700px;
+    height: 193px;
+    background: yellow;
+}
+#movie p{
+    width: 350px;
+    height: 193px;
+    background: #000;
+    float: left;
+}
+ 
+#ani{
+    width: 700px;
+    height: 193px;
+    background: yellow;
+}
+
+#btn{
+    width: 700px;
+    height: 266px;
+    background: yellow;
+}
+
+#btn p{
+    width: 175px;
+    height: 266px;
+    background: #000;
+    float: left;
+}
+#banner{
+    width: 700px;
+    height: 193px;
+    background: yellow;
+}
+
+#news{
+    width: 700px;
+    height: 193px;
+    background: yellow;
+}
+#footer_menu{
+    width: 700px;
+    background: #404555;
+    text-align: right;
+    border-bottom: 1px solid #ccc;
+}
+#footer_menu p{
+    padding-right: 20px;
+    display: inline;}
+    #footer_menu p a{
+        color: #ccc; text-decoration: none; font-size: 14px; font-weight: bold; letter-spacing: -1px;
+    }
+    #footer_menu p a:hover{
+        color: #000;
+    }
+#footer{
+    width: 700px;
+    height: 193px;
+    background: yellow;
+}

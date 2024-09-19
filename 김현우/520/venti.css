@@ -1,0 +1,32 @@
+/*초기설정*/
+* {padding: 0; margin: 0;}
+a {text-decoration: none;}
+img {vertical-align: middle;}
+
+/*레이아웃*/
+#header { width: 1400px; height: 147px; }
+#header p {display: inline-block;} /*한줄로 배치*/
+#header p a { 
+    color: #333; 
+    font-size: 18px; 
+    font-weight: bold;
+    letter-spacing: -1px;
+
+    padding-right: 90px;
+}
+
+#header p:hover a { color:#780996;}
+
+
+/*프랜차이즈버튼*/
+#header p.btn { width: 160px; height: 50px; line-height: 50px; 
+                background: #780996; text-align: center;
+                border-radius: 30px; /*모서리를 둥글게*/
+             }
+
+
+#header p.btn a { padding: 0; color:#fff;}
+
+
+#main { width: 1400px; height: 687px; background: pink;}
+#section { width: 1400px; height: 1126px; background: yellow;}

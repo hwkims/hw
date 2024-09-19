@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>transform</title>
+        <style>
+            *{ padding: 0; margin: 0; }
+            
+            section{
+                width: 100px; height: 100px;
+                background-color: #ededed;
+                margin: 50px;
+                
+                perspective: 150px;
+            }
+            div{
+                width: 100px; height: 100px;
+                background-color: orange;
+                
+                transition: 0.5s;
+            }
+            
+            .box01:hover{ transform: rotateX(70deg); }
+            .box02:hover{ transform: rotateY(70deg); }
+            .box03:hover{ transform: rotateZ(70deg); }
+        </style>
+    </head>
+    <body>
+        <section>
+            <div class="box01">X축 회전</div>
+        </section>
+        <section>
+            <div class="box02">Y축 회전</div>
+        </section>
+        <section>
+            <div class="box03">Z축 회전</div>
+        </section>
+    </body>
+</html>

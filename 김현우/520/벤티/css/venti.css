@@ -1,0 +1,93 @@
+/*초기설정*/
+* {padding: 0; margin: 0 auto           ;} /*여백초기화*/
+a {text-decoration: none;} /*밑줄제거*/
+img {vertical-align: middle;} /*그림 옆에 요소들 수직정렬 가운데*/
+
+#header { width: 1400px; height: 147px;}
+#header p{
+    display: inline-block;
+}
+#header p a{
+    color: #333;
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: -1px;
+
+    padding-right: 90px;
+}
+#header p:hover a{
+    color: #780996;
+}
+
+#header p.btn{
+    width: 160px; height: 50px;
+    line-height: 50px;
+    background: #780996;
+    text-align: center;
+    border-radius: 30px;
+
+}
+#header p.btn a{ padding: 0;
+    color: #fff;
+    color: #fff;
+}
+#main {
+    width: 1400px;
+    height: 687px;
+    background: pink;
+}
+#section{
+    width: 1400px;
+    /* height: 1126px; */
+    /* background: yellow; */
+    text-align: center;
+}
+#section h2{
+    padding-top: 70px ;
+    font-size: 36px;
+}
+#section h2 span{
+    color: #780996;
+}
+#section h4{
+    padding-top: 30px;
+    font-size: 18px;
+    color: #333   ;
+
+}
+
+#section table{
+    border-collapse: collapse;
+    margin: 30px auto;
+}
+#section table td{
+    border: #ddd 1px solid;
+    width: auto;
+    height: 60px ;
+    color: #333;
+    font-size: 14;
+}
+#section table tr.title td{
+    background: #f9f9f9;
+    font-weight: 900;
+    border-top: 2px solid #780996;
+}
+#section table td del{
+    text-decoration: line-through;
+    color: #999;
+}
+#section table td span{
+    text-decoration: double;
+    font-weight: 900;
+    color: rgb(255, 153, 0) ;
+}
+#section p{
+    text-align: left;
+    padding-left: 300px;
+    color: #333;
+    font-size: 14px;
+    padding-bottom: 30px;
+}
+#section p span{
+    color: rgb(255, 153, 0) ;
+}

@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>EDIYA COFFEE</title>
+<style>
+body {
+  margin: 0;
+  font-family: sans-serif;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.header {
+  background-color: #f0f0f0;
+  padding: 20px;
+}
+
+.header .logo {
+  float: left;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.header .nav {
+  float: right;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.header .nav li {
+  display: inline-block;
+  margin-left: 20px;
+}
+
+.header .nav li a {
+  text-decoration: none;
+  color: #333;
+}
+
+.section {
+  background-color: #fff;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.section h2 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.section p {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 10px;
+}
+
+.section .image-container {
+  width: 100%;
+  position: relative;
+}
+
+.section .image-container img {
+  width: 100%;
+  height: auto;
+}
+
+.section .image-container .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.section .image-container .overlay h2 {
+  font-size: 36px;
+  font-weight: bold;
+}
+
+.section .image-container:hover .overlay {
+  opacity: 1;
+}
+
+.section .button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.section .button:hover {
+  background-color: #0056b3;
+}
+
+.section .table-container {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.section .table-container th,
+.section .table-container td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: left;
+}
+
+.section .table-container th {
+  background-color: #f0f0f0;
+}
+
+.section .table-container td.red-border {
+  border: 1px solid red;
+}
+
+.footer {
+  background-color: #f0f0f0;
+  padding: 20px;
+  text-align: center;
+}
+</style>
+</head>
+<body>
+<div class="container">
+  <div class="header">
+    <div class="logo">
+      EDIYA COFFEE
+    </div>
+    <ul class="nav">
+      <li><a href="#">메뉴</a></li>
+      <li><a href="#">이디야멤버스</a></li>
+      <li><a href="#">커피랩</a></li>
+      <li><a href="#">이디야컬쳐랩</a></li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <div class="image-container">
+      <img src="main_bg.jpg" alt="EDIYA COFFEE">
+      <div class="overlay">
+        <h2>ALWAYS BESIDE YOU, EDIYA COFFEE</h2>
+      </div>
+    </div>
+    <p>
+      이디야 커피의 다양한 메뉴를 맛보세요.
+    </p>
+    <a href="#" class="button">자세히 보기</a>
+  </div>
+
+  <div class="section">
+    <h2>우리 동네 매장을 자랑해 주세요.</h2>
+    <p>
+      이디야 커피가 푸짐한 선물을 드립니다.
+    </p>
+    <a href="#" class="button">자세히 보기</a>
+  </div>
+
+  <div class="section">
+    <h2>CCM이란?</h2>
+    <p class="lline">
+      기업의 경영 전반이 소비자 관점에서 소비자 중심으로 이루어지는지 한국소비자원이 평가하고 공정거래위원회가 인증하는 제도
+    </p>
+    <div class="image-container">
+      <img src="logo.jpg" alt="CCM">
+    </div>
+    <p>
+      소비자 중심경영
+    </p>
+  </div>
+
+  <div class="section">
+    <h2>소비자분쟁 해결 기준</h2>
+    <div class="table-container">
+      <table>
+        <thead>
+          <tr>
+            <th>구분</th>
+            <th>유형</th>
+            <th>해결기준</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td rowspan="6">식품</td>
+            <td>제품 불량</td>
+            <td rowspan="4">제품 교환 또는 구입가 환불</td>
+          </tr>
+          <tr>
+            <td>함량, 용량부족</td>
+          </tr>
+          <tr>
+            <td>부패, 변질</td>
+          </tr>
+          <tr>
+            <td>유통기간 경과</td>
+          </tr>
+          <tr>
+            <td>이물 혼입</td>
+            <td rowspan="2">치료비, 경비 및 일실소득
+            <br>(단, 일실소득은 피해로 인하여 소득상실이 발생한 사실이 입증될 시 한함.
+            <br> 금액을 입증할 수 없는 경우에는 시중 노임단가를 기준으로 함)</td>
+          </tr>
+          <tr>
+            <td>부작용, 상해사고</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <div class="footer">
+    <p>© 2023 EDIYA COFFEE</p>
+  </div>
+</div>
+</body>
+</html>

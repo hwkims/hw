@@ -1,0 +1,70 @@
+/*초기설정*/
+* { padding: 0; margin: 0;
+    font-family: 'Noto Sans KR', sans-serif;
+} /*여백초기화*/
+a { text-decoration: none;} /*링크 밑줄제거*/
+img { vertical-align: middle;}
+div { margin: 0 auto;}
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100&display=swap');
+
+body {
+  font-family: 'Noto Sans KR', sans-serif;
+}
+
+/*상단로고&메뉴*/
+#top { width: 700px; height: 80px;}
+#top p { display: inline-block; padding-right: 35px; }
+#top p a { 
+    color:#333; font-size: 18px; 
+    font-weight: 50; letter-spacing: -1px;}
+#top p a:hover   { color:blue;}
+
+/*메인화면*/
+#main { width: 700px; height: 690px; background: pink;}
+
+/*오늘하루열지않음*/
+#btn { width: 700px; height: 50px; line-height: 50px; background: #000;
+
+}
+#btn p {   vertical-align: middle;
+    float: right;
+     
+}
+ 
+ 
+#btn p.txt {
+    color:#fff; font-size: 1rem;
+}
+
+
+/*연체이자율 표*/
+#down { width: 700px; height: 450px;   text-align: center;}
+#down h2 {
+    padding-top: 70px;
+    font-size: 24px;
+    letter-spacing: -2px;
+}
+
+#down table { 
+    border-collapse: collapse;
+    margin: 40px auto;
+}
+#down table td {
+    border: 1px solid #ddd;
+    height: 30px;
+    font-size: 14px;
+    color:#333;
+    border-top: 2px solid black;
+}
+#down table td.t1 {
+    background: #efefef;
+    font-weight: bold;
+    height: 50px;
+    
+}
+
+#down table td.t2 {
+    background: #f7f7f7;
+    font-weight: bold;
+    height: 50px;
+}

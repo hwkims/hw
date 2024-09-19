@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>페이지이동-메인화면</title>
+    <style>
+        /* 상단메뉴 */
+        table.top td a {
+            color:#666;
+            font-size: 16px;
+            text-decoration: none;
+            padding-right: 30px;
+        }
+        table.top td a:hover{
+            background-color: #000;
+        }
+        /*로고*/
+        tr.logo td {
+            border-top: 1px solid red;
+            text-align: center;
+        }
+        tr.logo:hover{
+            transform: rotate(360deg);
+        }
+
+        /*메뉴*/
+        tr.menu td {
+            text-align: center;
+            background: #000;
+        }
+        tr.menu td:hover {
+            background: red;
+        }
+        tr.menu td a {
+            color:#fff;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: bold;
+        }
+        table.op {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+   <table border="1" class="op">
+    <!-- 상단메뉴 -->
+    <tr>
+        <td colspan="3">
+            <table class="top" align="right" >
+                <tr>
+                    <td height="50"><a href="#a">로그인</a></td>
+                    <td><a href="#a">회원가입</a></td>
+                    <td><a href="#a">사이트맵</a></td>                    
+                </tr>
+            </table>
+        </td>       
+    </tr>
+
+    <!-- 로고 -->
+    <tr class="logo">
+        <td colspan="3"><a href="main.html"><img src="images/logo.jpg"></a></td>    
+    </tr>
+
+    <!-- 메뉴 -->
+    <tr class="menu">
+        <td width="200" height="40"><a href="main.html">회사소개</a></td>
+        <td width="200" height="40"><a href="about.html">사진첩</a></td>
+        <td width="200" height="40"><a href="int.html">게시판</a></td>
+    </tr>
+
+    <!-- 메인화면 -->
+    <tr>
+        <td colspan="3"><img src="images/mainimg.jpg" usemap="#use"></td>    
+        
+    </tr>
+
+    <!-- 하단영역 -->
+    <tr>
+        <td colspan="3"><img src="images/copyright.jpg" usemap="#copyright"></td>    
+        <map name="copyright">
+            <area shape="rect" coords="0,0,200,100" href="mailto:admin@naver.com" alt="이메일">
+        </map>
+    </tr>
+
+
+   </table>
+</body>
+</html>

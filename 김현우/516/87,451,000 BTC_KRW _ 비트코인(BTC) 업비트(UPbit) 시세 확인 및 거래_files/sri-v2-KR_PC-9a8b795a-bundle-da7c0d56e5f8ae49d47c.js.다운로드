@@ -1,0 +1,974 @@
+!function(){try{var e="undefined"!=typeof window?window:"undefined"!=typeof global?global:"undefined"!=typeof self?self:{},t=(new Error).stack;t&&(e._sentryDebugIds=e._sentryDebugIds||{},e._sentryDebugIds[t]="2542f78f-e28c-4754-89ec-98cb54a56dfe",e._sentryDebugIdIdentifier="sentry-dbid-2542f78f-e28c-4754-89ec-98cb54a56dfe")}catch(e){}}();var _global="undefined"!=typeof window?window:"undefined"!=typeof global?global:"undefined"!=typeof self?self:{};_global.SENTRY_RELEASE={id:"a2c176496c4c6a858c2cfe131601c238a8805dcf"},(self.webpackChunkupbit_web=self.webpackChunkupbit_web||[]).push([[4456],{24975:function(e,t,n){"use strict";n.d(t,{SV:function(){return l}});var o=n(95659),i=n(74737),r=n(64487),a=n(67597),c=(n(8679),n(67294));const s={componentStack:null,error:null,eventId:null};class l extends c.Component{__init(){this.state=s}__init2(){this._openFallbackReportDialog=!0}constructor(e){super(e),l.prototype.__init.call(this),l.prototype.__init2.call(this),l.prototype.__init3.call(this);const t=(0,o.Gd)().getClient();t&&t.on&&e.showDialog&&(this._openFallbackReportDialog=!1,t.on("afterSendEvent",(t=>{t.type||t.event_id!==this._lastEventId||(0,i.jp)({...e.dialogOptions,eventId:this._lastEventId})})))}componentDidCatch(e,{componentStack:t}){const{beforeCapture:n,onError:o,showDialog:s,dialogOptions:l}=this.props;(0,r.$e)((u=>{if(function(e){const t=e.match(/^([^.]+)/);return null!==t&&parseInt(t[0])>=17}(c.version)&&(0,a.VZ)(e)){const n=new Error(e.message);n.name=`React ErrorBoundary ${n.name}`,n.stack=t,function(e,t){const n=new WeakMap;!function e(t,o){if(!n.has(t))return t.cause?(n.set(t,!0),e(t.cause,o)):void(t.cause=o)}(e,t)}(e,n)}n&&n(u,e,t);const p=(0,r.Tb)(e,{contexts:{react:{componentStack:t}}});o&&o(e,t,p),s&&(this._lastEventId=p,this._openFallbackReportDialog&&(0,i.jp)({...l,eventId:p})),this.setState({error:e,componentStack:t,eventId:p})}))}componentDidMount(){const{onMount:e}=this.props;e&&e()}componentWillUnmount(){const{error:e,componentStack:t,eventId:n}=this.state,{onUnmount:o}=this.props;o&&o(e,t,n)}__init3(){this.resetErrorBoundary=()=>{const{onReset:e}=this.props,{error:t,componentStack:n,eventId:o}=this.state;e&&e(t,n,o),this.setState(s)}}render(){const{fallback:e,children:t}=this.props,n=this.state;if(n.error){let t;return t="function"==typeof e?e({error:n.error,componentStack:n.componentStack,resetError:this.resetErrorBoundary,eventId:n.eventId}):e,c.isValidElement(t)?t:null}return"function"==typeof t?t():t}}},45220:function(e){e.exports=function(e){return null===e}},84753:function(e,t,n){var o=n(56029),i=n(53325),r=n(67206);e.exports=function(e,t){return e&&e.length?o(e,r(t,2),i):void 0}},16250:function(e,t,n){"use strict";n.d(t,{d:function(){return q}});var o=n(35944),i=n(67294),r=n(64721),a=n.n(r),c=n(3651),s=n.n(c),l=n(15137),u=n(85932),p=n(53706),d=n(88014),h=n(73924),f=n(733),g=n(90958),x=n(19265),m=n(78187),v=n(16869),y=n(25626),b=n(116),w=n(36005),k=n(64769),C=n(49967),_=n(86729),Z=n(36351),S=n(54906),P=n(6966),$=n(22141),B=n(1157),A=n(54548),O=n(78511),R=n(13384),T=n(57360),z=n(25843),E=Object.defineProperty,I=Object.defineProperties,X=Object.getOwnPropertyDescriptors,L=Object.getOwnPropertySymbols,D=Object.prototype.hasOwnProperty,N=Object.prototype.propertyIsEnumerable,M=(e,t,n)=>t in e?E(e,t,{enumerable:!0,configurable:!0,writable:!0,value:n}):e[t]=n,V=(e,t)=>{for(var n in t||(t={}))D.call(t,n)&&M(e,n,t[n]);if(L)for(var n of L(t))N.call(t,n)&&M(e,n,t[n]);return e},H=(e,t)=>I(e,X(t));const F=({childRoute:e})=>{const t=e=>{var t;const n=null==(t=e.location.pathname.match(/^\/[^/]+/g))?void 0:t[0],o=-1!==s()([v.ngC,v.CCD,"/upbit_user"],n),i=a()([v.Bt1,v.L0Z,v.x$u],e.location.pathname);return o&&!i},n=e=>{var t;const n=e.location.pathname,o=null==(t=n.match(/^\/[^/]+/g))?void 0:t[0];return a()([v._Yv,v.Jfg,v.DtH,v.j1d],n)||a()([v.CCD,v.c9b,"/upbit_user",v.G3C],o)};return(0,o.tZ)(l.Route,{render:i=>(0,o.tZ)(f.Z,H(V({layoutClassName:{subMain:t(i),whiteSubMain:n(i)},layoutStyle:{}},i),{children:e}))})},K=()=>(0,o.BX)(l.Switch,{children:[(0,o.tZ)(l.Route,{path:v.CCD+"/corporate/password_reset/callback",component:({location:e})=>(0,o.tZ)(l.Redirect,{to:H(V({},e),{pathname:"/upbit_user/corporate/password_reset/callback"})})}),(0,o.tZ)(l.Route,{path:v.CCD,component:({location:e})=>(0,o.tZ)(l.Redirect,{to:H(V({},e),{pathname:b.sT})})})]}),q=()=>((0,m.Z)(),(0,o.BX)(o.HY,{children:[(0,o.tZ)(_.Z,{}),(0,o.tZ)(u.Z,{}),(0,o.BX)(l.Switch,{children:[(0,o.tZ)(l.Redirect,{exact:!0,from:"/",to:{pathname:v.$x3}}),(0,o.tZ)(l.Redirect,{exact:!0,from:v.mEm,to:{pathname:v.Qkp}}),(0,o.tZ)(l.Redirect,{exact:!0,from:v.abr,to:{pathname:v.a7b}}),(0,o.tZ)(F,{childRoute:(0,o.tZ)(i.Suspense,{fallback:(0,o.tZ)("div",{className:"mainB"}),children:(0,o.BX)(l.Switch,{children:[(0,o.tZ)(l.Route,{path:v.$x3,component:w.Z}),(0,o.tZ)(l.Route,{path:`${v.R41}/:code`,component:d.ZP}),(0,o.tZ)(l.Route,{path:v.R41,component:d.ZP}),(0,o.tZ)(l.Redirect,{exact:!0,from:v.ev4,to:v.R41}),(0,o.tZ)(l.Route,{path:"/upbit_user",component:A.Z}),(0,o.tZ)(l.Route,{exact:!0,path:v.CCD+"/corporate/password_change",component:Z.Z}),(0,o.tZ)(l.Route,{exact:!0,path:v.CCD+"/corporate/password_change/otp",component:S.Z}),(0,o.tZ)(l.Route,{path:v.CCD,component:K}),(0,o.tZ)(l.Redirect,{exact:!0,from:v.auO,to:{pathname:b.sT}}),(0,o.tZ)(l.Redirect,{exact:!0,from:v.c9b,to:{pathname:b.sT}}),(0,o.tZ)(l.Route,{path:v.mEm,component:x.Z}),(0,o.tZ)(l.Route,{path:v._rP,component:T.Z}),(0,o.tZ)(l.Route,{path:v.rX2,component:h.default}),(0,o.tZ)(l.Route,{path:v.M47,component:g.ZP}),(0,o.tZ)(l.Route,{path:v.WjZ,component:z.Z}),(0,o.tZ)(l.Route,{path:v.gwo,component:k.Z}),(0,o.tZ)(l.Route,{path:v.c53,component:O.Z}),(0,o.tZ)(l.Route,{path:v.abr,component:P.Z}),(0,o.tZ)(l.Route,{path:v.ngC,component:B.Z}),(0,o.tZ)(l.Route,{path:v.fzl,component:$.E}),(0,o.tZ)(l.Route,{path:v.NoQ,component:p.g}),(0,o.tZ)(l.Route,{path:v.XhI,component:R.Z}),(0,o.tZ)(l.Route,{path:v.uEw,component:R.Z}),(0,o.tZ)(l.Route,{path:v.AXr,component:R.Z}),(0,o.tZ)(l.Route,{path:v.sHe,component:R.Z}),(0,o.tZ)(l.Route,{path:v.fW$,component:R.Z}),(0,o.tZ)(l.Route,{path:v.G3C,component:C.Z}),(0,o.tZ)(l.Route,{path:v.MnY,component:y.m}),(0,o.tZ)(l.Redirect,{to:v.$x3})]})})})]})]}))},81395:function(e,t,n){"use strict";n.d(t,{Ii:function(){return a},Ln:function(){return i},qt:function(){return r}});var o=n(22222);const i=e=>e.entities.apiManager.coinNews||{},r=(0,o.P1)(i,(e=>e.coin_report||{featuredList:[],list:[]})),a=(0,o.P1)(i,(e=>e.market||{featuredList:[],list:[]}))},99238:function(e,t,n){"use strict";n.d(t,{B:function(){return i},l:function(){return o}});const o=e=>{var t;return(null==(t=e.entities)?void 0:t.ccx.aml.basic)||[]},i=e=>{var t;return(null==(t=e.entities)?void 0:t.ccx.aml.addition)||{}}},41958:function(e,t,n){"use strict";n.d(t,{B:function(){return i},N:function(){return o}});const o=e=>{var t;return(null==(t=e.entities)?void 0:t.ccx.banks.supportedBanks)||{}},i=e=>{var t;return(null==(t=e.entities)?void 0:t.ccx.banks.banks)||{}}},26732:function(e,t,n){"use strict";n.d(t,{Df:function(){return o},gJ:function(){return i}});n(24350),n(42968);n(65377).b_.endpoints.twoFactorAuths.select(void 0);const o=e=>{var t,n,o;return(null==(o=null==(n=null==(t=e.entities)?void 0:t.ccx)?void 0:n.certifications)?void 0:o.twoFactorTxIds)||{}},i=e=>{var t,n;return(null==(n=null==(t=e.entities)?void 0:t.ccx)?void 0:n.certifications)||{}}},10175:function(e,t,n){"use strict";n.d(t,{Hn:function(){return r},_1:function(){return c},mt:function(){return a},u5:function(){return s}});var o=n(22222);const i=e=>{var t;return(null==(t=e.entities)?void 0:t.ccx.deposits)||{}},r=(0,o.P1)(i,(e=>e.virtualBankAccount)),a=(0,o.P1)(i,(e=>e.coinAddress||{})),c=(0,o.P1)(i,(e=>e.coinAddressFetched||{})),s=((0,o.P1)(i,(e=>e.chance||{})),(0,o.P1)(i,(e=>e.qr.url||"")))},52727:function(e,t,n){"use strict";n.d(t,{Q:function(){return o}});const o=e=>{var t;return(null==(t=e.entities)?void 0:t.ccx)||{}}},72522:function(e,t,n){"use strict";n.d(t,{RH:function(){return a},Vm:function(){return r},e7:function(){return c},gG:function(){return s}});var o=n(22222);const i=e=>{var t;return(null==(t=e.entities)?void 0:t.ccx.personalWalletWhitelist)||{}},r=(0,o.P1)(i,(e=>e.personalWalletVerification)),a=((0,o.P1)(i,(e=>e.currencyLists.data)),(0,o.P1)(i,(e=>e.personalWalletSubmitCurrentStep.step))),c=(0,o.P1)(i,(e=>e.personalWalletCurrentWallet.wallet)),s=(0,o.P1)(i,(e=>e.personalWalletCurrentWallet.account));(0,o.P1)(i,(e=>e.personalWalletSubmittedData.data))},66327:function(e,t,n){"use strict";n.d(t,{F1:function(){return a},OB:function(){return i},Ok:function(){return r},_R:function(){return c},j8:function(){return s}});var o=n(42968);const i=e=>{var t;return(null==(t=e.entities)?void 0:t.ccx.referral.yearlyRewards)||o.L},r=e=>{var t;return(null==(t=e.entities)?void 0:t.ccx.referral.referralRanks)||{}},a=e=>{var t;return(null==(t=e.entities)?void 0:t.ccx.referral.meFollowers)||{}},c=e=>{var t;return(null==(t=e.entities)?void 0:t.ccx.referral.rewardsStats)||{}},s=e=>{var t;return(null==(t=e.entities)?void 0:t.ccx.referral.referralMe)||{}}},35766:function(e,t,n){"use strict";n.d(t,{I:function(){return o}});const o=e=>{var t;return(null==(t=e.entities)?void 0:t.ccx.signIn.histories)||[]}},73215:function(e,t,n){"use strict";n.d(t,{$G:function(){return a},gR:function(){return c},ip:function(){return s}});var o=n(22222),i=n(52727);const r=(0,o.P1)(i.Q,(e=>e.staking||{})),a=(0,o.P1)(r,(e=>e.authTerms||{})),c=(0,o.P1)(r,(e=>e.deposit||{})),s=(0,o.P1)(r,(e=>e.account||{}))},63506:function(e,t,n){"use strict";n.d(t,{R:function(){return o},T:function(){return i}});const o=e=>{var t;return(null==(t=e.entities)?void 0:t.ccx.status.wallet)||{}},i=e=>{var t;return(null==(t=e.entities)?void 0:t.ccx.status.networkWallet)||{}}},43730:function(e,t,n){"use strict";n.d(t,{m:function(){return o}});const o=e=>{var t;return(null==(t=e.entities)?void 0:t.ccx.withdraws.recent)||{}}},18558:function(e,t,n){"use strict";n.d(t,{LR:function(){return u},nW:function(){return c},s5:function(){return l},xX:function(){return r},yO:function(){return s},zE:function(){return a}});var o=n(22222);const i=e=>{var t;return(null==(t=e.entities)?void 0:t.crixTrends)||{}},r=(0,o.P1)(i,(e=>e.changeRates||[])),a=((0,o.P1)(i,(e=>e.tradeVolumes||[])),(0,o.P1)(i,(e=>e.intervalChangeRates||[]))),c=(0,o.P1)(i,(e=>e.marketcaps||[])),s=(0,o.P1)(i,(e=>e.accTradePrice||[])),l=(0,o.P1)(i,(e=>e.dailyVolumePower||{})),u=(0,o.P1)(i,(e=>e.weeklyChangeRates||[]))},99945:function(e,t,n){"use strict";n.d(t,{u:function(){return o}});const o=e=>{var t;return(null==(t=e.entities)?void 0:t.cs.categories)||{}}},48353:function(e,t,n){"use strict";n.d(t,{c:function(){return i},s:function(){return o}});const o=e=>{var t;return(null==(t=e.entities)?void 0:t.cs.coins)||{}},i=e=>{var t;return(null==(t=e.entities)?void 0:t.cs.coinMaster)||{}}},25997:function(e,t,n){"use strict";n.d(t,{W:function(){return o}});const o=e=>{var t,n;return(null==(n=null==(t=e.entities)?void 0:t.cs)?void 0:n.depositInformation)||{}}},26064:function(e,t,n){"use strict";n.d(t,{Do:function(){return r},Kz:function(){return i},OJ:function(){return a},vE:function(){return o}});const o=e=>{var t;return(null==(t=e.entities)?void 0:t.cs.qnas.lists.questions)||{}},i=e=>{var t;return(null==(t=e.entities)?void 0:t.cs.qnas.details)||{}},r=e=>{var t;return(null==(t=e.entities)?void 0:t.cs.qnas.lists.totalCount)||0},a=e=>{var t;return(null==(t=e.entities)?void 0:t.cs.qnas.unreadAnswerCount)||{}}},88966:function(e,t,n){"use strict";n.d(t,{G:function(){return o}});const o=e=>{var t;return(null==(t=e.entities)?void 0:t.cs.template)||{}}},64291:function(e,t,n){"use strict";n.d(t,{Pn:function(){return s},Xm:function(){return c},jq:function(){return a},mB:function(){return o},nA:function(){return i},w7:function(){return r}});const o=e=>{var t;return(null==(t=e.entities)?void 0:t.krDruid.ocr.foreignReVerify)||{}},i=e=>{var t;return(null==(t=e.entities)?void 0:t.krDruid.ocr.koreanReVerify)||{}},r=e=>{var t;return(null==(t=e.entities)?void 0:t.krDruid.ocr.koreanRegister)||{}},a=e=>{var t;return(null==(t=e.entities)?void 0:t.krDruid.ocr.foreignRegister)||{}},c=e=>{var t;return(null==(t=e.entities)?void 0:t.krDruid.ocr.webcamAppear)||{}},s=e=>{var t,n;return null==(n=null==(t=e.entities)?void 0:t.krDruid)?void 0:n.publicKey}},24120:function(e,t,n){"use strict";n.d(t,{Kb:function(){return r},Xp:function(){return i},gd:function(){return a}});var o=n(22222);const i=e=>{var t;return(null==(t=e.entities)?void 0:t.kyc.banks.supportedKycBanks)||{}},r=e=>{var t;return(null==(t=e.entities)?void 0:t.kyc.banks.supportedBankBranches)||{}},a=(0,o.P1)((e=>e.entities.kyc.banks),(e=>e.certificateKycBank))},4035:function(e,t,n){"use strict";n.d(t,{$C:function(){return c},KV:function(){return i},SY:function(){return r},_y:function(){return o},ht:function(){return a}});const o=e=>{var t;return(null==(t=e.entities)?void 0:t.static.cryptoCurrencyDesc.deposit)||[]},i=e=>{var t;return(null==(t=e.entities)?void 0:t.static.cryptoCurrencyDesc.depositLimits)||[]},r=e=>{var t;return(null==(t=e.entities)?void 0:t.static.cryptoCurrencyDesc.withdraw)||[]},a=e=>{var t;return(null==(t=e.entities)?void 0:t.static.cryptoCurrencyDesc.withdraw2)||[]},c=e=>{var t;return(null==(t=e.entities)?void 0:t.static.cryptoCurrencyDesc.instantWithdraw)||[]}},45233:function(e,t,n){"use strict";n.d(t,{O:function(){return o}});const o=e=>{var t;return(null==(t=e.entities)?void 0:t.static.deposit.depositChecklist)||{}}},42399:function(e,t,n){"use strict";n.d(t,{n:function(){return o}});const o=(0,n(22222).P1)((function(e){var t;return(null==(t=e.ui)?void 0:t.depositInformation)||{}}),(e=>e.selectedVasp))},8922:function(e,t,n){"use strict";n.d(t,{x:function(){return o}});const o=e=>e.ui.wallets.selectedTab},4575:function(e,t,n){"use strict";n.d(t,{O:function(){return o}});const o={closed:"closed",pausing:"pausing",reserved:"reserved",processing:"processing",unstakingOnly:"unstaking_only"}},79272:function(e,t,n){"use strict";n.d(t,{x:function(){return o}});const o={pending:"pending",accepted:"accepted",rejected:"rejected",canceled:"canceled"}},7145:function(e,t,n){"use strict";n.d(t,{k:function(){return o}});const o={VERIFIED:"verified",WAITING:"waiting"}},76028:function(e,t,n){"use strict";n.d(t,{d:function(){return o.dO},y:function(){return o.yl}});var o=n(40767)},15356:function(e,t,n){"use strict";var o=n(67294),i=n(84059);t.Z=o.memo(i.Qd)},116:function(e,t,n){"use strict";n.d(t,{AS:function(){return g},Au:function(){return v},Ko:function(){return _},P5:function(){return k},PO:function(){return r},Sk:function(){return p},Sy:function(){return C},U$:function(){return Z},WG:function(){return w},c8:function(){return u},d8:function(){return y},jT:function(){return a},jd:function(){return d},k7:function(){return s},m_:function(){return P},oW:function(){return S},sT:function(){return i},t9:function(){return x},tH:function(){return o},tL:function(){return c},tr:function(){return m},wY:function(){return h},x4:function(){return f},zF:function(){return l},zQ:function(){return b}});const o="/upbit_user",i=`${o}/private/signin`,r=`${o}/private/qr_code`,a=`${r}_to_app`,c=`${o}/corporate`,s=`${c}/signin`,l=`${c}/two_factor_auth`,u=`${c}/require_two_factor_auth`,p=`${c}/sms_auth`,d=`${c}/terms_agreement`,h=`${c}/totp`,f=`${c}/password_reset`,g=`${f}/callback`,x=`${f}/password_register`,m=`${f}/two_factor_register`,v=`${f}/sms_auth`,y=i,b=r,w=`${r}_to_app`,k=c,C=s,_=l,Z=u,S="/exchange",P="/coin_list"},95032:function(e,t,n){"use strict";n.d(t,{bb:function(){return No},vt:function(){return Do},rZ:function(){return Lo},Kd:function(){return Xo},My:function(){return Io},Jw:function(){return Eo}});var o=n(35944),i=n(67294),r=n(41277),a=n(15137),c=n(16869),s=n(7771),l=n.n(s),u=n(14841),p=n.n(u),d=n(4480),h=n(71257),f=n(56264),g=n.n(f),x=n(3945),m=n.n(x),v=n(98269),y=n.n(v),b=n(55743),w=n.n(b),k=n(88010),C=n.n(k),_=n(83608),Z=n.n(_),S=n(42231);var P=(e,t,n)=>{const o=Z()(100),i=(e=>e?e+l()():l()())(n)+o,r={access_key:e,nonce:i,device_id:window[S.lX]},a=$(w().parse(JSON.stringify({alg:"HS256",typ:"JWT"}))),c=$(w().parse(JSON.stringify(r)));return{jwt:`${a}.${c}.${$(C()(`${a}.${c}`,t)).toString()}`,nonce:i}};const $=e=>{let t=y().stringify(e);return t=t.replace(/=+$/,""),t=t.replace(/\+/g,"-"),t=t.replace(/\//g,"_"),t};var B=n(25387),A=n.n(B),O=n(12437),R=n.n(O),T=n(42238),z=n.n(T);const E=(()=>{const e=new(R())(window.navigator.userAgent);return Boolean(e.mobile())})(),I=(0,d.cn)({key:"tempSessionState",default:{isAuthenticated:!1,sessionRefreshing:!1,tokens:null,session:{},signinExpiresIn:null,guid:null,hash:null,showSessionPopupType:void 0,isIpSecurity:!1}}),X=(0,d.cn)({key:"timestampDiffState",default:0});var L=n(17306);const D=(0,i.createContext)({callback:()=>null,ccxHost:""}),N=i.createContext({}),M={id:{cumaClientId:"91d2ba50e5d3d14110cb876dbff6d07afc724725ad781e904ad509f9a09969ae",recaptchaSiteKey:"6LdY7HsUAAAAAG7J15MMsmV1ZCOQgh5Qrx6GSkW8",invisibleRecaptchaSiteKey:"6Ldx7XsUAAAAANX43FDw_F_0Q5azqIRw6av_-Emp",CCX_HOST:"proxy"==={NODE_ENV:"production",HOST:"https://mochi.breezebit.com",API_ENV:"production",CCX_CLIENT_ID:"d7e7ad2a688ce444a8155bd02a7bd145991654ff669561ac6816acfd32b981ee",PUBLIC_PATH:"/assets/bundled/",CAPTCHA_KEY:"Fb9VWgbm5fbL9Me50+CzmTTz+vWPwtXRD8S2xy8mJRM="}.PROXY_FLAG?"https://id-upbit-dev-proxy.sgdev.dunamu.io/ccx_host":"https://ccxid.upbit.com"},kr:{cumaClientId:"6LfuYhEiAAAAAJfLcBQt1O-Y3K6nrJucvxMwzrGx",recaptchaSiteKey:"6Lff-LQiAAAAAOvHSZx3yKrSq0TefrqI44FJ72jC",invisibleRecaptchaSiteKey:"",CCX_HOST:"proxy"==={NODE_ENV:"production",HOST:"https://mochi.breezebit.com",API_ENV:"production",CCX_CLIENT_ID:"d7e7ad2a688ce444a8155bd02a7bd145991654ff669561ac6816acfd32b981ee",PUBLIC_PATH:"/assets/bundled/",CAPTCHA_KEY:"Fb9VWgbm5fbL9Me50+CzmTTz+vWPwtXRD8S2xy8mJRM="}.PROXY_FLAG?"https://upbit-dev-proxy.dev.dunamu.io/ccx_host":"https://ccx.upbit.com"},sg:{cumaClientId:"f547c74925b87c66aabb35d509a0b4497071d3f0c895bcade1e986fcd8585fdc",recaptchaSiteKey:"6LeRvW4UAAAAAFw_hYH9wv1xOLRDb41igkkhatVl",invisibleRecaptchaSiteKey:"66LeKAXEUAAAAAMKG8cEVNJ1kDSEeTxDKdiDeiA-Y",CCX_HOST:"proxy"==={NODE_ENV:"production",HOST:"https://mochi.breezebit.com",API_ENV:"production",CCX_CLIENT_ID:"d7e7ad2a688ce444a8155bd02a7bd145991654ff669561ac6816acfd32b981ee",PUBLIC_PATH:"/assets/bundled/",CAPTCHA_KEY:"Fb9VWgbm5fbL9Me50+CzmTTz+vWPwtXRD8S2xy8mJRM="}.PROXY_FLAG?"https://sg-upbit-dev-proxy.sgdev.dunamu.io/ccx_host":"https://ccxsg.upbit.com"},th:{cumaClientId:"3a9d2390660b8f56c4fce89fab22570bb98d7246d9b8c16fce8fd92d44fd0e11",recaptchaSiteKey:"6Ld6GcMZAAAAACu03iQUhxKwYKWPNUQ1P047CECF",invisibleRecaptchaSiteKey:"6LdEGcMZAAAAABt6b482H411nW-5ocb1PDO81WnN",CCX_HOST:"proxy"==={NODE_ENV:"production",HOST:"https://mochi.breezebit.com",API_ENV:"production",CCX_CLIENT_ID:"d7e7ad2a688ce444a8155bd02a7bd145991654ff669561ac6816acfd32b981ee",PUBLIC_PATH:"/assets/bundled/",CAPTCHA_KEY:"Fb9VWgbm5fbL9Me50+CzmTTz+vWPwtXRD8S2xy8mJRM="}.PROXY_FLAG?"https://th-upbit-dev-proxy.sgdev.dunamu.io/ccx_host":"https://ccxth.upbit.com"}};var V=({children:e,country:t="kr",callback:n=(()=>null),ccxHost:i})=>(0,o.tZ)(o.HY,{children:(0,o.tZ)(L.f6,{country:t,themes:L.np,mode:"light",device:"pc",children:(0,o.tZ)(D.Provider,{value:{callback:n,ccxHost:i},children:(0,o.tZ)(N.Provider,{value:{cumaClientId:M[t].cumaClientId,recaptchaSiteKey:M[t].recaptchaSiteKey,invisibleRecaptchaSiteKey:M[t].invisibleRecaptchaSiteKey},children:(0,o.tZ)(d.Wh,{children:e})})})})});var H=()=>{const e=(0,d.sJ)(I),t=(0,d.sJ)(X),n=navigator.language,{language:o}=Xo(),r=e=>({url:t,params:n,data:o,files:i})=>{const r={url:t,method:e,headers:a(t),params:g().decamelizeKeys(n),data:g().decamelizeKeys(o),files:i};return r.headers["Content-Type"]="application/json",r.headers["Upbit-Platform"]=E?"MOBILE_WEB":"WEBAPP",(0,h.Z)(r).then((e=>c(e))).catch((e=>s(e)))},a=(0,i.useCallback)((i=>{const r=i.startsWith(M.kr.CCX_HOST)||i.startsWith(M.id.CCX_HOST)||i.startsWith(M.sg.CCX_HOST)||i.startsWith(M.th.CCX_HOST),a=null==e?void 0:e.tokens;if(a&&r){const{jwt:e,nonce:i}=P(a.access_key,a.secret_key,t);return{Authorization:`Bearer ${e}`,"Accept-Language":`${o}-${m()(Lo())}, ${o};q=1, ${n};q=0.1`}}return{Authorization:void 0,"Accept-Language":`${o}-${m()(Lo())}, ${o};q=1, ${n};q=0.1`}}),[n,o,null==e?void 0:e.tokens,t]),c=e=>{const{data:t,status:n}=e;try{if(!t||n>300)return Promise.reject(e);if(t.error)return Promise.reject(e)}catch(e){console.warn(e)}return g().camelizeKeys(t)},s=e=>{const{response:t,message:n}=e;try{const{data:e,status:n}=t;return e&&e.error?(null==e||e.error,g().camelizeKeys(e)):g().camelizeKeys({error:{message:`이용에 불편을 드려 죄송합니다. 고객센터에 문의해주세요.(${n})`,name:"알림",title:"알림"}})}catch(t){return Promise.reject(e)}};return{get:e=>r("GET")(e),post:e=>r("POST")(e),put:e=>r("PUT")(e),delete:e=>r("DELETE")(e)}};var F=()=>{const{ccxHost:e}=(0,i.useContext)(D),t=H(),n=(0,d.Zl)(X);return{fetchTimestamp:()=>{return o=void 0,i=null,r=function*(){const o=yield t.get({url:`${e}/timestamp`});return n(1e3*p()(o)-l()()),o},new Promise(((e,t)=>{var n=e=>{try{c(r.next(e))}catch(e){t(e)}},a=e=>{try{c(r.throw(e))}catch(e){t(e)}},c=t=>t.done?e(t.value):Promise.resolve(t.value).then(n,a);c((r=r.apply(o,i)).next())}));var o,i,r}}},K=n(70917),q=n(69817),j=n(32483),J=n(70786),W=n(53158),G=n(37703),U=n(48175),Q=n(35624),Y=n(55334),ee=n(21529),te=n(46489),ne=n.n(te),oe=n(28583),ie=n.n(oe);const re=(0,d.cn)({key:"signinState",default:{phoneOtp:{txId:"",expiresAt:""},histories:[]}});var ae=(e,t,n)=>new Promise(((o,i)=>{var r=e=>{try{c(n.next(e))}catch(e){i(e)}},a=e=>{try{c(n.throw(e))}catch(e){i(e)}},c=e=>e.done?o(e.value):Promise.resolve(e.value).then(r,a);c((n=n.apply(e,t)).next())}));var ce=()=>{const e=`${M[Lo()].CCX_HOST}/api/v1`,t=H(),[,n]=(0,d.FV)(I),[,o]=(0,d.FV)(re),{callback:r}=(0,i.useContext)(D);return{loginAuthCorporate:(o,i,r,a,c,s,l,u)=>ae(void 0,null,(function*(){const a=yield t.post({url:`${e}/upbit/auth`,headers:{"Upbit-Platform":l?"MOBILE_WEB":"WEBAPP"},data:{email:o,password:i,recaptcha:r,clientId:"d7e7ad2a688ce444a8155bd02a7bd145991654ff669561ac6816acfd32b981ee",isIpSecurity:s,provider:u}});if(!a.accessToken)return a;const{accessToken:c}=a;return n((e=>ie()({},e,{isAuthenticated:!0,session:a,tokens:c&&ne()(c).api}))),a})),loginAuthCorporateStatus:()=>ae(void 0,null,(function*(){return yield t.get({url:`${e}/certifications/company/login/status`,params:{clientId:"d7e7ad2a688ce444a8155bd02a7bd145991654ff669561ac6816acfd32b981ee"}})})),postCertificationsCompanyOTP:()=>ae(void 0,null,(function*(){return yield t.post({url:`${e}/certifications/company/totp/request_two_factor`,params:{}})})),postCertificationsCompanyPhoneAuth:()=>ae(void 0,null,(function*(){const n=yield t.post({url:`${e}/certifications/company/phone_otp_auths/request`,params:{}});return"error"in n||n.txId&&o((e=>ie()({},e,{phoneOtp:n}))),n})),postCertificationsCompanyOTPVerify:n=>ae(void 0,null,(function*(){return yield t.post({url:`${e}/certifications/company/totp`,data:n})})),postCertificationsCompanyPhoneAuthVerify:n=>ae(void 0,null,(function*(){const i=yield t.post({url:`${e}/certifications/company/phone_otp_auths/verify`,data:n});return"error"in i||i.txId&&o((e=>ie()({},e,{phoneOtp:i}))),i})),getCertificationCompanyToken:()=>ae(void 0,null,(function*(){const n=yield t.post({url:`${e}/certifications/company/token`});return r({session:n}),n})),getCertificationCompanyFds:()=>ae(void 0,null,(function*(){return yield t.get({url:`${e}/certifications/company/fds`})})),postCreateCompanyTotp:()=>ae(void 0,null,(function*(){return yield t.post({url:`${e}/certifications/company/totp/create`})})),postIssueCompanyTotp:n=>ae(void 0,null,(function*(){return yield t.post({url:`${e}/certifications/company/totp/issue`,data:{tx_id:n}})})),postCertificationsCompanyTermsAgreement:(n,o)=>ae(void 0,null,(function*(){return yield t.post({url:`${e}/certifications/company/terms_agreement`,data:{term_and_condition:n,privacy_policy:o}})}))}},se=n(116),le=(e,t,n)=>new Promise(((o,i)=>{var r=e=>{try{c(n.next(e))}catch(e){i(e)}},a=e=>{try{c(n.throw(e))}catch(e){i(e)}},c=e=>e.done?o(e.value):Promise.resolve(e.value).then(r,a);c((n=n.apply(e,t)).next())}));const ue=e=>[{title:"(필수) 개인정보 수집 및 이용 동의",key:"privacy_policy",eventKey:"1833-안내팝업",moreEventKey:"1833-안내팝업",isMustRead:!1,hasMore:!0,required:!0,url:`${U.EK}/terms/aml/md${e?"/dark":""}/signup_privacy_corporate.md`},{title:"(필수) 업비트 이용약관",key:"term_and_condition",eventKey:"1831-안내팝업",moreEventKey:"1831-안내팝업",isMustRead:!1,hasMore:!0,required:!0,url:`${U.EK}/terms/aml/md${e?"/dark":""}/terms_of_use.md`}];var pe=()=>{const[e,t]=(0,i.useState)(),[n,o]=(0,i.useState)(),r=(0,G.useSelector)(ee.xh),[c,s]=(0,i.useState)(),{postCertificationsCompanyTermsAgreement:l,loginAuthCorporateStatus:u,postCertificationsCompanyOTP:p,postCertificationsCompanyPhoneAuth:d}=ce(),h=(0,a.useHistory)(),{isAllAgreementChecked:f,canSubmitBtnActive:g,isAgreementsChecked:x,isAccordionOpen:m,handleAccordionOpen:v,handleClickAllAgreement:y,handleClickAgreement:b,handleClickMore:w}=(0,Y.E)({agreeBtn:"동의",disagreeBtn:"동의 안함",isEnableOutsideClose:!1,agreements:ue(r),editable:!n,allAgreementEvent:{eventKey:"982-모두 동의_약관동의",openAccordionEventKey:"983-메뉴 여닫기_약관동의"},initAccordionOpen:!0,setAgreementPopupPayload:t}),k=(0,i.useCallback)((()=>le(void 0,null,(function*(){try{const e=yield u();if("error"in e)throw e.error;switch(null==e?void 0:e.state){case"waiting_totp_verification":{const e=yield p();if("error"in e)throw e.error;h.push(`${se.zF}/${e.txId}`);break}case"waiting_sms_verification":{const e=yield d();if("error"in e)throw e.error;h.push(se.Sk);break}}}catch(e){s({title:"안내",error:e,setPayload:s,onClose:()=>{h.push(se.tH)}}),console.warn(e)}}))),[h,u,p,d]),C=(0,i.useCallback)((()=>le(void 0,null,(function*(){if((0,Q.L)("1830-약관동의"),f){const e=yield l(!0,!0);e.error?((0,Q.L)("1830-약관동의","약관동의 이후 과정 실패"),s({title:"안내",error:null==e?void 0:e.error,setPayload:s,onClose:()=>{h.push(se.tH)}})):yield k()}}))),[k,h,f,l]);return{handleClickMore:w,handleClickAgreement:b,isAgreementsChecked:x,isAccordionOpen:m,isAllAgreementChecked:f,handleClickAllAgreement:y,handleAccordionOpen:v,agreementPopupPayload:e,onClickAfterAgree:C,isDarkMode:r,errorPopup:c}},de=Object.defineProperty,he=Object.getOwnPropertySymbols,fe=Object.prototype.hasOwnProperty,ge=Object.prototype.propertyIsEnumerable,xe=(e,t,n)=>t in e?de(e,t,{enumerable:!0,configurable:!0,writable:!0,value:n}):e[t]=n;var me=e=>t=>{const{isAuthenticated:n}=(0,d.sJ)(I),i=(0,a.useHistory)();if(n)return(0,o.tZ)(e,((e,t)=>{for(var n in t||(t={}))fe.call(t,n)&&xe(e,n,t[n]);if(he)for(var n of he(t))ge.call(t,n)&&xe(e,n,t[n]);return e})({},t));{const{from:e}=i.location.state||{from:{pathname:se.sT}};return i.push(e),(0,o.tZ)(o.HY,{})}};const ve=({onClickAgreement:e,onClickMore:t,isChecked:n,title:i,id:r,hasMore:a})=>{const c=(0,L.Fg)(),s={container:K.iv`
+      .TermsCheckAgree__allAgree + & {
+        margin-top: 18px;
+      }
+      & + & {
+        margin-top: 10px;
+      }
+    `,checkbox:K.iv`
+      div {
+        font-size: 16px;
+        line-height: 20px;
+        color: ${c.colors.font_1};
+      }
+    `,hasMore:K.iv`
+      width: auto;
+      background: transparent;
+      border: unset;
+      color: ${c.colors.font_3};
+      font-size: 14px;
+      height: auto;
+    `},{t:l}=(0,j.$)("mypage");return(0,o.BX)(q.Kq,{sx:s.container,justifyContent:"space-between",children:[(0,o.tZ)(q.XZ,{checked:n,size:"md",sx:s.checkbox,gap:12,onChange:e,children:i}),a&&(0,o.tZ)(q.zx,{sx:s.hasMore,onClick:t,children:l("viewBtnText")})]})};var ye=me((()=>{const{handleClickMore:e,handleClickAgreement:t,isAgreementsChecked:n,isAccordionOpen:i,isAllAgreementChecked:r,handleClickAllAgreement:a,handleAccordionOpen:c,agreementPopupPayload:s,onClickAfterAgree:l,isDarkMode:u,errorPopup:p}=pe();return(0,o.BX)("div",{className:"NewMembership",children:[(0,o.tZ)(W.OK,{payload:p}),(0,o.tZ)(J.Z,{payload:s}),(0,o.BX)(q.Kq,{alignItems:"center",direction:"column",sx:K.iv`
+          gap: 40px;
+          margin-top: 90px;
+        `,children:[(0,o.BX)(q.Kq,{alignItems:"center",direction:"column",sx:K.iv`
+            gap: 11px;
+          `,children:[(0,o.tZ)(q.Jd,{variant:"heading2",tag:"div",children:"약관 동의"}),(0,o.tZ)(q.Jd,{variant:"heading8",tag:"div",weight:"regular",children:"업비트 서비스 이용을 위하여 아래의 약관 동의가 필요합니다."})]}),(0,o.BX)(q.xu,{sx:K.iv`
+            width: 100%;
+            box-sizing: border-box;
+            border: 1px solid #dfe0e5;
+            padding: 24px;
+          `,children:[(0,o.BX)(q.Kq,{sx:K.iv`
+              gap: 8px;
+            `,children:[(0,o.tZ)(q.XZ,{size:"md",onChange:a,checked:r}),(0,o.tZ)(q.Jd,{variant:"body1",weight:"bold",children:"모두 동의합니다."})]}),(0,o.tZ)(q.xu,{sx:(0,K.iv)({marginTop:"18px"}),children:ue(u).map((i=>(0,o.tZ)(ve,{onClickAgreement:()=>{t(i)},onClickMore:()=>e(i),isChecked:n[i.key],title:i.title,id:i.key,hasMore:i.hasMore},i.key)))})]}),(0,o.tZ)(q.zx,{variant:"contained",size:"lg",disabled:!r,onClick:l,children:"확인"})]})]})}));const be=(0,d.cn)({key:"certificationState",default:{twoFactorTxIds:{},twoFactorStatus:{},workflow:{type:"",txid:"",state:"",returns:{}},deviceId:void 0,auths:null,userPersonalInfo:void 0,certificationChange:void 0}});var we=()=>{const e=H(),{ccxHost:t}=(0,i.useContext)(D),[,n]=(0,d.FV)(be),[,o]=(0,d.FV)(I);return{getCertificationsAuthWorkflow:i=>{return r=void 0,a=null,c=function*(){var r;const a=yield e.get({url:`${t}/certifications/auth/workflow`,params:i});if("error"in a)return a;if(null==a?void 0:a.workflow){n((e=>ie()({},e,{workflow:a.workflow,auths:a.auths})));const e=null==(r=a.workflow)?void 0:r.returns,t=null==e?void 0:e.accessToken;o((n=>ie()({},n,{isAuthenticated:!0,session:e,tokens:t&&ne()(t).api})))}return a},new Promise(((e,t)=>{var n=e=>{try{i(c.next(e))}catch(e){t(e)}},o=e=>{try{i(c.throw(e))}catch(e){t(e)}},i=t=>t.done?e(t.value):Promise.resolve(t.value).then(n,o);i((c=c.apply(r,a)).next())}));var r,a,c}}},ke=n(88148);const Ce=()=>{const{search:e}=(0,a.useLocation)(),t=(0,a.useHistory)(),[n,c]=(0,i.useState)(),s=r.parse(e),{token:l,workflow_txid:u}=s,{getCertificationsAuthWorkflow:p}=we();(0,i.useEffect)((()=>{l&&u&&d()}),[l,u]);const d=()=>{return e=void 0,n=null,o=function*(){try{const e=yield p({workflow_txid:u,security_token:l});if("error"in e){const{error:n}=e;c({setPayload:c,title:"알림",body:n.message,onClose:()=>{t.push(se.oW)}})}}catch(e){console.error(e)}},new Promise(((t,i)=>{var r=e=>{try{c(o.next(e))}catch(e){i(e)}},a=e=>{try{c(o.throw(e))}catch(e){i(e)}},c=e=>e.done?t(e.value):Promise.resolve(e.value).then(r,a);c((o=o.apply(e,n)).next())}));var e,n,o};return(0,o.BX)(o.HY,{children:["연결중입니다...",(0,o.tZ)(ke.fz,{payload:n})]})};var _e=n(20076),Ze=n(45090),Se=n(15356);var Pe=n(13886),$e=n(40767),Be=n(88709),Ae=n(47541),Oe=(e,t,n)=>new Promise(((o,i)=>{var r=e=>{try{c(n.next(e))}catch(e){i(e)}},a=e=>{try{c(n.throw(e))}catch(e){i(e)}},c=e=>e.done?o(e.value):Promise.resolve(e.value).then(r,a);c((n=n.apply(e,t)).next())}));const Re=K.iv`
+  flex: 1;
+  box-sizing: border-box;
+  border: 1px solid #ddd;
+  height: 60px;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  img {
+    width: 16px;
+    height: 20px;
+  }
+`,Te=()=>{((e="")=>{(0,i.useEffect)((()=>{const t=t=>(t.preventDefault(),t.returnValue=e,e);return window.addEventListener("beforeunload",t),()=>window.removeEventListener("beforeunload",t)}),[e])})();const{totp:e,errorPopup:t,isButtonActivated:n,handleClickVerify:r,handleOnChange:c,inputValue:s,confirmPopup:l,basicPopup:u}=(()=>{const{t:e}=(0,j.$)(""),[t,n]=(0,i.useState)(""),[o,r]=(0,i.useState)({uri:"",secret:""}),[c,s]=(0,i.useState)(),[l,u]=(0,i.useState)(""),[p,d]=(0,i.useState)(!1),{postCertificationsCompanyOTP:h,postCertificationsCompanyOTPVerify:f,postCreateCompanyTotp:g,postIssueCompanyTotp:x}=ce(),m=(0,a.useHistory)(),[v,y]=(0,i.useState)(),[b,w]=(0,i.useState)(),k=(0,i.useRef)();(0,i.useEffect)((()=>{const e=m.block((()=>(y({title:"안내",body:"2채널 추가인증(OTP)등록 후 로그인 가능합니다.\n로그아웃 하시겠습니까?",onConfirm:()=>{e(),m.push(se.sT)},onCancel:()=>{y(void 0)},setPayload:y}),!1)));return k.current=e,()=>e()}),[m]),(0,i.useEffect)((()=>{C()}),[]);const C=()=>Oe(void 0,null,(function*(){try{const e=yield g();if(e.error)throw e.error;if(!e.workflow)throw new Error("none workflow");const t=e.workflow.txid;n(t);const o=yield x(t);o&&o.workflow.returns&&r(o.workflow.returns)}catch(e){s({title:"알림",setPayload:s,error:e})}})),_=(0,i.useMemo)((()=>(0,Ae.XJ)(l)),[l]),Z=(0,i.useCallback)((e=>u(e.target.value)),[u]),S=(0,i.useCallback)((n=>Oe(void 0,null,(function*(){if(n.preventDefault(),!_)return null;(0,$e.dO)("로그인_OTP등록화면","","로그인_OTP등록화면",{category:"OTP신규등록",eventDetail:"인증_btn_클릭"});try{const n=yield f({workflow_txid:t,totp_security_token:l});if("error"in n)throw n.error;if("waiting_totp_verification"===(null==n?void 0:n.state)){const t=yield h();if("error"in t)throw t.error;w({title:e("global:popup.successTitle"),body:e("global:twoFactorAuth.enabledTwoFactor"),onClose:()=>{var e;(0,Be.k3)(),null==(e=k.current)||e.call(k),m.push(`${se.zF}/${t.txId}`)},closeBtn:e("popup.close"),setPayload:w})}}catch(t){const n=t;n.name.includes("TotpVerificationFailed")?s({setPayload:s,error:n}):n.name.includes("WorkflowExecutionBlocked")||n.name.includes("AttemptToAuthenticateAlreadyFailedWorkflow")?w({title:"알림",body:"5회이상 실패하셨습니다. 다시 시도해주세요.",onClose:()=>{var e,t;(0,$e.dO)("api_에러팝업 ","","api_에러팝업 ",{category:"2채널인증_인증횟수초과팝업",eventDetail:null!=(e=n.message)?e:""}),null==(t=k.current)||t.call(k),m.push(se.k7)},closeBtn:e("popup.close"),setPayload:w}):w({title:n.title,body:n.message,onClose:()=>{var e;"V1::Exceptions::LoginBlocked"===n.name&&(0,$e.dO)("api_에러팝업 ","","api_에러팝업 ",{category:"FDS_이용제한안내팝업",eventDetail:null!=(e=n.message)?e:""})},closeBtn:e("popup.close"),setPayload:w})}(0,Q.L)("1075-2채널 추가 인증_인증클릭",{eventDetail:"등록"})}))),[Pe.cl,t,l,_]);return{totp:o,errorPopup:c,isButtonActivated:_,handleClickVerify:S,handleOnChange:Z,inputValue:l,hasError:p,confirmPopup:v,basicPopup:b}})();return(0,o.BX)(o.HY,{children:[(0,o.tZ)(ke.ZP,{payload:u}),(0,o.tZ)(Ze.ZP,{payload:l}),(0,o.BX)(q.xu,{sx:K.iv`
+          margin: 60px auto 0;
+          width: 860px;
+        `,children:[(0,o.tZ)(q.Jd,{variant:"heading2",weight:"bold",children:"2채널 추가인증(OTP)"}),(0,o.BX)(q.Kq,{direction:"column",sx:K.iv`
+            margin-top: 23px;
+            border: 1px solid #e3e5ec;
+            padding: 60px 130px;
+            width: auto;
+            gap: 60px;
+            > div {
+              width: 100%;
+            }
+          `,children:[(0,o.BX)(q.Jd,{variant:"heading8",sx:K.iv`
+              color: #666;
+            `,children:["2채널 추가인증이란, 회원님 계정의 보안 강화를 위해",(0,o.tZ)("br",{}),"출금 시점마다 안전한 수단으로 한 번 더 인증하는 것을 의미합니다."]}),(0,o.BX)(q.xu,{children:[(0,o.tZ)(q.Jd,{variant:"heading8",children:"1. Google OTP 앱을 휴대폰에 다운로드 및 설치해주세요."}),(0,o.BX)(q.Kq,{sx:K.iv`
+                display: flex;
+                gap: 10px;
+                margin-top: 30px;
+                width: 600px;
+              `,children:[(0,o.BX)("a",{css:Re,href:_e.b9.IOS,target:"_blank",onClick:()=>(0,Q.L)("1073-2채널 추가인증_앱 다운 클릭","앱스토어"),rel:"noreferrer",children:[(0,o.tZ)(q.JO,{width:20,height:20,type:"appmarket_ios"}),(0,o.tZ)(q.Jd,{color:"font_2",variant:"body2",children:"APP Store"})]}),(0,o.BX)("a",{css:Re,href:_e.b9.GOOGLE,target:"_blank",onClick:()=>(0,Q.L)("1073-2채널 추가인증_앱 다운 클릭","구글스토어"),rel:"noreferrer",children:[(0,o.tZ)(q.JO,{width:20,height:20,type:"appmarket_and"}),(0,o.tZ)(q.Jd,{color:"font_2",variant:"body2",children:"Google play"})]})]})]}),(0,o.BX)(q.xu,{children:[(0,o.tZ)(q.Jd,{variant:"heading8",children:"2. Google OTP 앱에서 ‘QR 코드 스캔’ 또는 ‘설정 키 입력’을 해주세요."}),(0,o.BX)(q.xu,{sx:K.iv`
+                display: flex;
+                margin-top: 30px;
+                border: 1px solid #ddd;
+                border-radius: 2px;
+                padding: 24px;
+              `,children:[(0,o.tZ)(q.xu,{sx:K.iv`
+                  margin-right: 30px;
+                `,children:(0,o.tZ)(Se.Z,{value:e.uri,size:90})}),(0,o.BX)(q.Kq,{direction:"column",justifyContent:"center",children:[(0,o.BX)(q.Jd,{tag:"p",variant:"body2",children:["설정키 :",(0,o.tZ)(q.Jd,{weight:"bold",sx:K.iv`
+                      color: #0062df;
+                    `,children:m()(e.secret)})]}),(0,o.BX)(q.Jd,{variant:"body4",children:["휴대폰 분실 시 설정키를 사용하여 인증 코드를 찾을 수 있습니다.",(0,o.tZ)("br",{}),(0,o.tZ)("b",{children:"설정키를 꼭 백업"}),"하여 안전하게 보관하고, 절대 타인에게 공유하지 마세요."]})]})]})]}),(0,o.BX)(q.xu,{children:[(0,o.tZ)(q.Jd,{variant:"heading8",children:"3. Google OTP 앱에 표시되는 OTP 번호를 입력해주세요."}),(0,o.BX)(q.xu,{sx:K.iv`
+                width: 100%;
+                margin-top: 30px;
+              `,children:[(0,o.tZ)(q.nv,{sx:K.iv`
+                  > div {
+                    height: 60px;
+                    padding: 0 25px;
+                    font-size: 16px;
+                  }
+                `,type:"text",placeholder:"OTP 번호(6자리) 입력",value:s,onChange:c,maxLength:6,showMaxLength:!1}),t&&(0,o.tZ)(W.OK,{payload:t})]})]}),(0,o.tZ)(q.zx,{sx:K.iv`
+              height: 60px;
+            `,disabled:!n,onClick:r,children:"인증"})]})]})]})},ze=e=>/^\d{6}$/.test(e);var Ee=n(23493),Ie=n.n(Ee),Xe=n(76028);const Le=()=>{const{ccxHost:e}=(0,i.useContext)(D),t=H();return{updateLocaleFlag:n=>{return o=void 0,i=null,r=function*(){const o=`${e}/member_settings`;yield t.put({url:o,data:{lang:n||Xo().language}})},new Promise(((e,t)=>{var n=e=>{try{c(r.next(e))}catch(e){t(e)}},a=e=>{try{c(r.throw(e))}catch(e){t(e)}},c=t=>t.done?e(t.value):Promise.resolve(t.value).then(n,a);c((r=r.apply(o,i)).next())}));var o,i,r}}};var De=n(82492),Ne=n.n(De),Me=n(73935),Ve=n(57734);let He=15e3;const Fe=()=>{const e=He;return He+=2,e},Ke=()=>document.getElementById("checkVerifMethodModal"),qe=e=>{const t=Ke();t&&Me.render(e,t)},je=()=>{const e=Ke();e&&Me.render((0,o.tZ)("div",{}),e)},Je=e=>{e.preventDefault(),je()},We=()=>({position:"fixed",zIndex:Fe()}),Ge=(e,t,n)=>(0,o.BX)(o.HY,{children:[(0,o.tZ)("div",{className:"upbitDim",style:{zIndex:Fe()}}),(0,o.tZ)("section",{className:n?`popup01 ${n} ty02`:"popup01 ty02",style:t?Ne()(We(),t):We(),children:e})]}),Ue=(e,t,n,i)=>qe(Ge((0,o.BX)("article",{children:[(0,o.tZ)("strong",{className:"tit",children:e}),(0,o.tZ)("p",{dangerouslySetInnerHTML:{__html:t}}),(0,o.tZ)("span",{children:(0,o.tZ)("a",{href:"#",onClick:Je,children:n||Ve.Z.t("popup.close")})})]}),void 0,i));var Qe=n(64721),Ye=n.n(Qe),et=n(1469),tt=n.n(et),nt=n(41609),ot=n.n(nt),it=n(59704),rt=n.n(it),at=n(99931),ct=n(24649);const st=e=>{try{return JSON.parse(e)}catch(e){return{}}},lt=e=>{try{return atob(e)}catch(e){return null}};var ut=Object.getOwnPropertySymbols,pt=Object.prototype.hasOwnProperty,dt=Object.prototype.propertyIsEnumerable,ht=(e,t)=>{var n={};for(var o in e)pt.call(e,o)&&t.indexOf(o)<0&&(n[o]=e[o]);if(null!=e&&ut)for(var o of ut(e))t.indexOf(o)<0&&dt.call(e,o)&&(n[o]=e[o]);return n};const ft=["/upbit_user",c.mEm,c.CCD,c.Lvm,c.ylo,c.SaA,c.Chv,c.$x3,c.NoQ+"/totp"],gt=({history:e,state:t,search:n})=>{const o=r.parse(n),i=at.tq?c.ev4:c.R41,a=Io();if((null==t?void 0:t.pathname)&&(0,ct.Yr)(null==t?void 0:t.pathname)){const e=t,{pathname:n,checkedLongSession:o,email:i,txid:a}=e,c=ht(e,["pathname","checkedLongSession","email","txid"]);ot()(c)?window.location.replace(`${location.origin}${n}`):window.location.replace(`${location.origin}${n}?${r.stringify(c)}`)}else if((null==o?void 0:o.pathname)&&(0,ct.Yr)(o.pathname+"")&&!rt()(ft,((e,t)=>Ye()(o.pathname,e)))){const e=o,{email:t,txid:n,checkedLongSession:i,pathname:a}=e,c=ht(e,["email","txid","checkedLongSession","pathname"]);ot()(c)?window.location.replace(`${location.origin}${a}`):window.location.replace(`${location.origin}${a}?${r.stringify(c)}`)}else a&&(0,ct.Yr)(a)&&!rt()(ft,((e,t)=>Ye()(a,e)))?window.location.replace(`${location.origin}${a}`):e.replace(i)},xt=({callback:e,interval:t=1e3}={})=>{const n=(0,i.useRef)(!1),[o,r]=(0,i.useState)(!1),[a,c]=(0,i.useState)(!1),[s,l]=(0,i.useState)(0),u=(0,i.useRef)(),p=(0,i.useCallback)((e=>{l(e),r(!0),c(!1)}),[l,r,c]),d=(0,i.useCallback)((()=>{l(0),r(!1),c(!1)}),[l,r,c]);return(0,i.useEffect)((()=>{u.current=e}),[e]),(0,i.useEffect)((()=>{if(o){const e=setInterval((()=>{l((e=>{let n=e-t/1e3;n<0&&(n=0);return 0===n&&(c(!0),r(!1)),n}));const e=u.current;if(e&&!n.current){const t=e();n.current=!0,t instanceof Promise?t.then((()=>{n.current=!1})):n.current=!1}}),t||1e3);return()=>{clearInterval(e)}}}),[o,u,t]),{activated:o,expired:a,remainedSeconds:s,startTimer:p,stopTimer:d}};var mt=(e,t,n)=>new Promise(((o,i)=>{var r=e=>{try{c(n.next(e))}catch(e){i(e)}},a=e=>{try{c(n.throw(e))}catch(e){i(e)}},c=e=>e.done?o(e.value):Promise.resolve(e.value).then(r,a);c((n=n.apply(e,t)).next())}));const vt=()=>{const e=(0,a.useHistory)(),{search:t}=(0,a.useLocation)(),{txid:n}=(0,a.useParams)(),{t:r}=(0,j.$)("global"),[s,l]=(0,i.useState)(""),[u,p]=(0,i.useState)(""),[d,h]=(0,i.useState)(null),[f,g]=(0,i.useState)(!1),{postCertificationsCompanyOTPVerify:x,getCertificationCompanyToken:m,getCertificationCompanyFds:v}=ce(),{updateLocaleFlag:y}=Le();(0,i.useEffect)((()=>{(0,Q.L)("42-login 2FA_enter page")}),[]);const{activated:b,expired:w,remainedSeconds:k,startTimer:C,stopTimer:_}=xt({callback:()=>mt(void 0,null,(function*(){try{const e=yield v();if(e&&e.error)throw e.error;const{state:t,uuid:n}=e;"waiting_token"===t&&(_(),Z()),k<=0&&g(!0)}catch(e){const t=e;_(),"V1::Exceptions::LoginBlocked"===(null==t?void 0:t.name)&&(0,Xe.d)("api_에러팝업 ","","api_에러팝업 ",{category:"FDS_이용제한안내팝업",eventDetail:null==t?void 0:t.message}),p(""),h({setPayload:h,title:"알림",body:null==t?void 0:t.message})}})),interval:2e3});(0,i.useEffect)((()=>{f&&h({setPayload:h,title:"알림",body:(0,o.BX)("p",{children:["일시적으로 지연되고 있습니다.",(0,o.tZ)("br",{}),"잠시 후 다시 시도해 주세요."]}),onClose:()=>e.push(c.CCD+"/corporate")})}),[e,f]);const Z=()=>mt(void 0,null,(function*(){try{const n=yield m();if("error"in n)throw n.error;const{scope:o}=n;"all"===o&&(y(null),gt({history:e,search:t}))}catch(e){const t=e;h({setPayload:h,title:r("popup.failedTitle"),body:t.message})}})),S=t=>mt(void 0,null,(function*(){if(6===s.length)try{(0,Xe.d)("로그인화면","","로그인화면",{category:"OTP인증",eventDetail:"확인_btn_클릭"});const e=yield x({workflow_txid:n,totp_security_token:s});if("error"in e)throw e.error;const{state:t}=e;if("failed"===t)throw Error("OTP인증에 실패하였습니다");"waiting_token"===t?Z():"waiting_fds"===t&&(yield p("인증번호를 확인중입니다."),C(20))}catch(t){const n=t;n.name.includes("TotpVerificationFailed")||n.name.includes("LoginRetryCountExceeded")||n.name.includes("TotpCanNotBeReused")?p(n.message):n.name.includes("WorkflowExecutionBlocked")?h({setPayload:h,title:n.title,body:n.message,onClose:()=>{var t;(0,Xe.d)("api_에러팝업 ","","api_에러팝업 ",{category:"2채널인증_인증횟수초과팝업",eventDetail:null!=(t=n.message)?t:""}),e.push(se.sT)}}):h({setPayload:h,title:n.title,body:n.message,onClose:()=>{var t;"V1::Exceptions::LoginBlocked"===n.name&&(0,Xe.d)("api_에러팝업 ","","api_에러팝업 ",{category:"FDS_이용제한안내팝업",eventDetail:null!=(t=n.message)?t:""}),e.push(se.k7)}})}}));return{t:r,basicPopup:d,activated:b,code:s,handleInputChange:e=>{const t=e.currentTarget.value;u&&p(""),/^\d{0,6}$/.test(t)&&l(t)},handleKeyPress:e=>{"Enter"===e.key&&S(e)},handleClickVerify:S,invalidCodeMessage:u,handleClickReset:()=>{l("")}}};var yt=me((()=>{const e=(0,L.Fg)(),t=K.iv`
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 48px;
+    color: ${e.colors.font_1};
+  `,n=K.iv`
+    font-family: 'Roboto';
+    font-style: normal;
+    margin-top: 90px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  `,i=K.iv`
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+    color: ${e.colors.font_2};
+    margin-top: 10px;
+  `,r=K.iv`
+    width: 600px;
+    margin-top: 60px;
+    gap: 0px;
+  `,a=K.iv`
+    margin-top: 40px;
+    border: unset;
+    border-radius: 2px;
+  `,c=K.iv`
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    color: ${e.colors.font_3};
+    margin-top: 30px;
+    width: 600px;
+  `,{t:s,basicPopup:l,activated:u,code:p,handleInputChange:d,handleKeyPress:h,handleClickVerify:f,invalidCodeMessage:g}=vt(),{t:x}=(0,j.$)("users",{keyPrefix:"OTPCertificationCompany"});return(0,o.BX)("div",{className:"NewMembership",children:[(0,o.tZ)(ke.fz,{payload:l}),(0,o.BX)(q.xu,{sx:n,children:[(0,o.tZ)(q.xu,{sx:t,children:x("title")}),(0,o.tZ)(q.xu,{sx:i,children:x("subTitle")}),(0,o.BX)(q.Kq,{direction:"column",sx:r,children:[(0,o.tZ)(q.nv,{disabled:u,placeholder:x("otpPlaceholder"),size:"L",value:p,autoFocus:!0,onChange:e=>d(e),onKeyPress:e=>h(e)}),g&&(0,o.tZ)("div",{className:"FormType__alert",children:g}),(0,o.tZ)(q.zx,{disabled:!ze(p)||u,size:"lg",sx:a,onClick:e=>f(e),children:x("loginBtn")})]}),(0,o.BX)(q.Gj,{itemGap:2,sx:c,children:[(0,o.tZ)(q.b$,{onClick:()=>{(0,Q.L)("544-freeze account_click link")},children:x("description.0")}),(0,o.BX)(q.b$,{children:[x("description.1"),(0,o.tZ)("span",{className:"grayColor",children:x("descriptionCs")})]})]})]})]})})),bt=(e,t,n)=>new Promise(((o,i)=>{var r=e=>{try{c(n.next(e))}catch(e){i(e)}},a=e=>{try{c(n.throw(e))}catch(e){i(e)}},c=e=>e.done?o(e.value):Promise.resolve(e.value).then(r,a);c((n=n.apply(e,t)).next())}));var wt=()=>{const{ccxHost:e}=(0,i.useContext)(D),t=H(),[,n]=(0,d.FV)(be);return{postCertificationsResetPasswordPhoneAuth:o=>bt(void 0,null,(function*(){const i=yield t.post({url:`${e}/certifications/reset_password_auth/sms/request`,data:o});return"error"in i||i.workflow&&n((e=>ie()({},e,{workflow:i.workflow}))),i})),postCertificationsResetPasswordPhoneAuthVerify:o=>bt(void 0,null,(function*(){const i=yield t.post({url:`${e}/certifications/reset_password_auth/sms/verify`,data:o});return"error"in i||n((e=>ie()({},e,{auths:i.auths}))),i})),postCertificationsResetPassword:o=>bt(void 0,null,(function*(){const i=yield t.post({url:`${e}/certifications/reset_password_auth/password`,data:o});return"error"in i||n((e=>ie()({},e,{auths:i.auths}))),i})),postCertificationsResetPasswordOTP:o=>bt(void 0,null,(function*(){const i=yield t.post({url:`${e}/certifications/reset_password_auth/totp`,data:o});return"error"in i||n((e=>ie()({},e,{auths:i.auths}))),i}))}};const kt=()=>{const e=(0,L.Fg)(),[t,n]=(0,i.useState)(""),[r,a]=(0,i.useState)(""),[c,s]=(0,i.useState)(),[l,u]=(0,d.FV)(be),{auths:p,workflow:h,deviceId:f}=l,{txid:g,type:x}=h||{},{postCertificationsResetPasswordOTP:m}=wt(),v=K.iv`
+    font-family: 'Roboto';
+    font-style: normal;
+    margin-top: 70px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  `,y=K.iv`
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 48px;
+    color: ${e.colors.font_1};
+  `,b=K.iv`
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+    color: ${e.colors.font_2};
+    margin-top: 10px;
+    text-align: center;
+  `,w=K.iv`
+    width: 600px;
+    margin-top: 30px;
+    gap: 0px;
+  `,k=K.iv`
+    margin-top: 10px;
+  `,C=K.iv`
+    margin-top: 40px;
+  `,_=K.iv`
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: ${e.colors.font_2};
+  `,Z=K.iv`
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    color: ${e.colors.font_3};
+    margin-top: 30px;
+  `,S=(0,i.useCallback)((e=>{const t=e.currentTarget.value.replace(new RegExp("[^0-9]","g"),"");t.length<=6&&n(t)}),[]),P=(0,i.useCallback)((()=>{return e=void 0,n=null,o=function*(){try{const e=yield m({device_id:f||"",workflow_txid:g,totp_security_token:t});if("error"in e){const{error:t}=e;$(t.title,t.message)}}catch(e){console.error(e)}},new Promise(((t,i)=>{var r=e=>{try{c(o.next(e))}catch(e){i(e)}},a=e=>{try{c(o.throw(e))}catch(e){i(e)}},c=e=>e.done?t(e.value):Promise.resolve(e.value).then(r,a);c((o=o.apply(e,n)).next())}));var e,n,o}),[f,t,m,g]),$=(e,t,n)=>{s({setPayload:s,title:e,body:t,onClose:n})};return(0,o.BX)(o.HY,{children:[(0,o.tZ)(ke.ZP,{payload:c}),(0,o.tZ)("div",{className:"NewMembership",children:(0,o.BX)(q.xu,{sx:v,children:[(0,o.tZ)(q.xu,{sx:y,children:"OTP 인증번호를 입력해 주세요."}),(0,o.tZ)(q.xu,{sx:b,children:"회원님의 안전한 계정 보호를 위해 OTP로 한 번 더 인증합니다."}),(0,o.BX)(q.Kq,{direction:"column",sx:w,children:[(0,o.tZ)(q.xu,{sx:_,children:"OTP 인증번호"}),(0,o.tZ)(q.nv,{placeholder:"인증번호 입력",size:"L",value:t,sx:k,errorMessage:r||"",onChange:e=>S(e)}),(0,o.tZ)(q.zx,{disabled:!ze(t),size:"lg",sx:C,onClick:()=>P(),children:"확인"}),(0,o.tZ)(q.Gj,{itemGap:2,sx:Z,dotPosition:"top",children:(0,o.BX)(q.b$,{children:[(0,o.tZ)("span",{children:"인증에 문제가 있을 시 고객센터로 문의해 주세요. "}),(0,o.tZ)(q.Jd,{color:"font_2",children:"고객센터 1588-5682"})]})})]})]})})]})};var Ct=n(36800);const _t=new RegExp(`^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[~!@#$%^&*_\\-+=\`|(){}\\[\\]:;"'<>,.?/]).{${Ct.s},${Ct.k}}$`);var Zt=me((()=>{const e=(0,L.Fg)(),t=(0,a.useHistory)(),[n,r]=(0,i.useState)(),[c,s]=(0,i.useState)(""),[l,u]=(0,i.useState)(""),[p,h]=(0,i.useState)(""),[f,g]=(0,i.useState)(!1),{postCertificationsResetPassword:x}=wt(),[m,v]=(0,d.FV)(be),{workflow:y}=m,{txid:b,type:w}=y||{},k=K.iv`
+    font-family: 'Roboto';
+    font-style: normal;
+    margin-top: 70px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  `,C=K.iv`
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 48px;
+    color: ${e.colors.font_1};
+  `,_=K.iv`
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+    color: ${e.colors.font_2};
+    margin-top: 10px;
+    text-align: center;
+  `,Z=K.iv`
+    width: 600px;
+    margin-top: 30px;
+  `,S=K.iv`
+    margin-top: 40px;
+  `,P=K.iv`
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: ${e.colors.font_2};
+  `,$=K.iv`
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    color: ${e.colors.font_3};
+    margin-top: 30px;
+    width: 600px;
+  `,B=(0,i.useCallback)((e=>{const t=e.currentTarget.value;t.length>Ct.k||(t.length>=Ct.s&&!_t.test(t)?h("비밀번호는 최소 한 글자 이상의 영문 대소문자, 숫자, 특수문자를 포함하여 입력해 주세요."):t.length<Ct.s?h(`비밀번호는 ${Ct.s}~${Ct.k}자리 영문 대소문자, 숫자, 특수문자로 입력해 주세요.`):h(""),s(t),g(t!==l))}),[l]),A=(0,i.useCallback)((e=>{const t=e.currentTarget.value;t.length>Ct.k||(g(c!==t),u(t))}),[c]),O=()=>{return e=void 0,n=null,o=function*(){try{const e=yield x({workflow_txid:b,password:c,password_confirmation:l});if("error"in e){const{error:n}=e;r({setPayload:r,title:"알림",body:null==n?void 0:n.message,onClose:()=>t.push(se.tL)})}}catch(e){console.warn(e)}},new Promise(((t,i)=>{var r=e=>{try{c(o.next(e))}catch(e){i(e)}},a=e=>{try{c(o.throw(e))}catch(e){i(e)}},c=e=>e.done?t(e.value):Promise.resolve(e.value).then(r,a);c((o=o.apply(e,n)).next())}));var e,n,o};return(0,o.BX)("div",{className:"NewMembership",children:[(0,o.tZ)(ke.fz,{payload:n}),(0,o.BX)(q.xu,{sx:k,children:[(0,o.tZ)(q.xu,{sx:C,children:"비밀번호를 등록해 주세요."}),(0,o.tZ)(q.xu,{sx:_,children:"로그인 시 사용할 비밀번호를 등록해 주세요."}),(0,o.BX)(q.Kq,{direction:"column",spacing:10,sx:Z,children:[(0,o.tZ)(q.xu,{sx:P,children:"비밀번호"}),(0,o.tZ)(q.nv,{placeholder:"비밀번호 입력",type:"password",size:"L",errorMessage:c&&p?p:"",value:c,showMaxLength:!1,maxLength:Ct.k,onChange:e=>B(e)}),(0,o.tZ)(q.nv,{placeholder:"비밀번호 확인",type:"password",size:"L",value:l,maxLength:Ct.k,showMaxLength:!1,errorMessage:f?"비밀번호가 일치하지 않습니다.":"",onChange:e=>A(e)})]}),(0,o.BX)(q.Gj,{itemGap:2,sx:$,children:[(0,o.tZ)(q.b$,{children:"비밀번호는 8~64자리 영문 대소문자, 숫자, 특수문자를 조합하여 입력해 주세요."}),(0,o.tZ)(q.b$,{children:"특수문자는 ~!@#$%^&*_-+=`|(){}[]:;\"'<>,.?/만 사용 가능합니다."})]}),(0,o.tZ)(q.zx,{disabled:!c||!l||!ot()(p)||f,size:"lg",sx:S,onClick:()=>O(),children:"확인"})]})]})}));var St=e=>{const t=(0,a.useHistory)(),[n,r]=(0,i.useState)(),[c]=(0,d.FV)(be),{isAuthenticated:s}=(0,d.sJ)(I),{auths:l,workflow:u}=c,{txid:p}=u||{};return(0,i.useEffect)((()=>{if(l&&l.length>0&&s){const e=l.filter(((e,t)=>"done"===e.state)).length;if(0===e)t.push(se.oW);else if(2===e)t.push(se.t9);else if(1===e){"totp"===l[1].type?t.push(se.tr):t.push(se.Au)}else 3===e&&r({setPayload:r,title:"알림",body:"비밀번호 등록이 완료되었습니다",onClose:()=>t.push(se.tL)})}}),[l,s]),(0,o.BX)(o.HY,{children:[(0,o.tZ)(ke.fz,{payload:n}),e.children]})},Pt=n(85225),$t=n(49194);var Bt=(0,n(44122).Z)((({sitekey:e,callback:t,expiredCallback:n,language:i,country:r,center:a=!1,ref:c})=>(0,o.tZ)(o.HY,{children:(0,o.BX)("div",{className:"robotChkBox",style:{margin:""+(a?"0 auto":"")},children:["kr"===r&&(0,o.tZ)(Pt.Z,{ref:c,sitekey:e,hl:i,onChange:t,onExpired:n}),"kr"!==r&&(0,o.tZ)($t.Z,{sitekey:e,locale:i,callback:t,expiredCallback:n})]})})),{watch:!1}),At=n(68820),Ot=n.n(At),Rt=n(23279),Tt=n.n(Rt),zt=n(37085),Et=n(11105);const It=e=>{return t=void 0,n=null,o=function*(){const t=`${U.KZ}/oauth/${U.oQ}/applications`,n=yield h.Z.get(t,{params:g().decamelizeKeys({clientId:e})});return g().camelizeKeys(n)},new Promise(((e,i)=>{var r=e=>{try{c(o.next(e))}catch(e){i(e)}},a=e=>{try{c(o.throw(e))}catch(e){i(e)}},c=t=>t.done?e(t.value):Promise.resolve(t.value).then(r,a);c((o=o.apply(t,n)).next())}));var t,n,o};var Xt=(e,t,n)=>new Promise(((o,i)=>{var r=e=>{try{c(n.next(e))}catch(e){i(e)}},a=e=>{try{c(n.throw(e))}catch(e){i(e)}},c=e=>e.done?o(e.value):Promise.resolve(e.value).then(r,a);c((n=n.apply(e,t)).next())}));var Lt=()=>{const[e,t]=(0,i.useState)(!1),[n,o]=(0,i.useState)(!1),[c,s]=(0,i.useState)(""),[l,u]=(0,i.useState)(""),[p,d]=(0,i.useState)(""),[h,f]=(0,i.useState)(!1),[g,x]=(0,i.useState)(""),[m,v]=(0,i.useState)(""),[y,b]=(0,i.useState)(""),[w,k]=(0,i.useState)(!1),C=Lo(),{recaptchaSiteKey:_,cumaClientId:Z=""}=(0,i.useContext)(N),[S,P]=(0,i.useState)(),[$,B]=(0,i.useState)(),A=(0,a.useHistory)(),{search:O}=(0,a.useLocation)(),R=r.parse(O),{t:T}=(0,j.$)("global"),{loginAuthCorporate:z,loginAuthCorporateStatus:I,postCertificationsCompanyOTP:X,postCertificationsCompanyPhoneAuth:L}=ce(),[D,M]=(0,i.useState)(),V=(0,G.useSelector)(Et.Gq);(0,i.useEffect)((()=>{V&&gt({history:A,search:O})}),[V]),(0,i.useEffect)((()=>{if(window.scrollTo(0,0),K("화면진입","웹로그인",""),R){const{referer:e,workflow_txid:t,skip_workflow_signin:n,security_token:o,exchangeCode:i}=R;"login_after_verify"===e?Ue(T("popup.successTitle"),T("users.signIn.emailVerifiedPopupContent"),T("ui.closeButton")):"login_after_freeze"===e?Ue(T("popup.successTitle"),T("users.signIn.emailVerifiedPopupFrozenContent"),T("ui.closeButton")):t&&o&&"true"!==n&&(window.requestIdleCallback?requestIdleCallback((()=>{F(t,o)})):setTimeout((()=>{F(t,o)}),500))}else W(!1),H()}),[]);const H=()=>{const{responseType:e,clientId:t,redirectUri:n}=R;e&&t&&It(t).then((e=>{e&&(v(e.name),b(e.logoUri))}))},F=(e,t)=>{Ot().get(zt.R9,(e=>{Ot().x64hash128(e.map((function(e){return e.value})).join(),31)}))},K=(e,t,n,o)=>{const i=n||"";(0,Xe.y)("로그인",null,e,t,i)},q=Tt()((e=>{const t=!!(e=>/^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/.test(e))(e.value);f(t)}),300),J="CheckedLongSessionTimestamp",W=e=>{localStorage.setItem(J,e?"true":"false")};(0,i.useEffect)((()=>{D&&U(D)}),[D]);const U=e=>Xt(void 0,null,(function*(){var t;try{if("waiting_company_certification"===(null==e?void 0:e.scope)){const e=yield I();if("error"in e)throw e.error;switch(null==e?void 0:e.state){case"waiting_terms_agreement":E?A.push(se.c8):A.push(se.jd);break;case"waiting_totp_verification":{const e=yield X();if("error"in e)throw e.error;A.push(`${se.zF}/${e.txId}${O}`);break}case"waiting_sms_verification":if(E)A.push(se.c8);else{const e=yield L();if("error"in e)throw e.error;A.push(se.Sk)}}}}catch(e){const n=e;"V1::Exceptions::WorkflowExecutionBlocked"===n.name?P({title:"안내",body:null!=(t=n.message)?t:"",setPayload:P,onClose:()=>{A.push(se.tH)}}):x(n.message),console.warn(n)}})),Q=Ie()(((t,n)=>Xt(void 0,null,(function*(){var n,o,i,r,a;if(!t)try{(0,Xe.d)("로그인화면","","로그인화면",{category:"법인로그인",eventDetail:"확인_btn_클릭"});const t=yield z(c,l,p,e,Z,w,E,"upbit_company");if(t.error)throw t.error;M(t)}catch(e){null==(i=null==(o=null==(n=window.grecaptcha)?void 0:n.enterprise)?void 0:o.reset)||i.call(o),"V1::Exceptions::CompanyCertificationSigninBlocked"===e.name?P({title:"안내",body:null!=(r=e.message)?r:"",setPayload:P,onClose:()=>{A.push(se.tH)}}):"V1::Exceptions::ForeignIpBlocking"===e.name?P({title:"안내",body:null!=(a=e.message)?a:"",setPayload:P,onClose:()=>{var t;(0,Xe.d)("로그인화면","","로그인화면",{category:"해외로그인_차단안내팝업",eventDetail:null!=(t=e.message)?t:""})}}):x(e.message)}}))),3e3,{trailing:!1});return{basicPopup:S,errorPopup:$,email:c,password:l,isValidEmail:h,recaptchaToken:p,country:C,verificationFailedMessage:g,recaptchaSiteKey:_,setRecaptchaToken:d,checkedLongSession:e,handleClickCheck:()=>{t(!e),o(!0),W(!e)},handleTextIpSecurity:e=>{P({title:T("users:signInCompany.ipSecurityPopup.title"),body:T("users:signInCompany.ipSecurityPopup.body"),setPayload:P})},isIpSecurity:w,handleToggleIpSecurity:e=>{k(!w),w||P({title:T("users.signIn.ipsecuritytitle"),body:T("users.signIn.ipsecuritymsg"),setPayload:P})},handleClickSignin:Q,handleInputChange:e=>{const t=e.currentTarget,n=t.value,o=t.name;"password"===o&&n.length>64||("password"===o?(u(n),x("")):(s(n),q(t)))},oauthApplicationName:m,handleInputReset:({name:e="email"})=>{"password"===e?u(""):s("")},oauthApplicationLogoUri:y}};var Dt=()=>{const{basicPopup:e,errorPopup:t,email:n,password:r,isValidEmail:a,recaptchaToken:c,country:s,verificationFailedMessage:l,recaptchaSiteKey:u,setRecaptchaToken:p,checkedLongSession:d,handleClickCheck:h,handleTextIpSecurity:f,isIpSecurity:g,handleToggleIpSecurity:x,handleClickSignin:m,handleInputChange:v,oauthApplicationName:y}=Lt(),b=!(n&&r&&a&&c),{t:w}=(0,j.$)("global"),{t:k}=(0,j.$)("users",{keyPrefix:"signInCompany"}),C=(0,L.Fg)(),_=(0,i.useMemo)((()=>Nt(C)),[C]);return(0,o.BX)(q.xu,{sx:K.iv`
+        margin: 0 auto;
+        width: 600px;
+      `,children:[e&&(0,o.tZ)(ke.fz,{payload:e}),t&&(0,o.tZ)(W.OK,{payload:t}),(0,o.tZ)(q.xu,{sx:_.title,children:k("title")}),(0,o.tZ)(q.xu,{sx:_.subTitle,children:k("subTitle")}),(0,o.BX)(q.xu,{sx:_.url,children:[(0,o.BX)(q.xu,{sx:_.urlBlue,children:[(0,o.tZ)(q.JO,{type:"ico_lock",width:10,height:14}),"https:"]}),(0,o.tZ)(q.xu,{children:"//upbit.com"})]}),(0,o.BX)(q.Kq,{direction:"column",spacing:10,sx:_.textfieldContainer,children:[(0,o.tZ)(q.nv,{size:"L",placeholder:k("emailPlaceholder"),value:n,errorMessage:n&&!a?w("users.signIn.invalidEmail"):"",onChange:v,autoFocus:!0}),(0,o.tZ)(q.nv,{size:"L",type:"password",name:"password",placeholder:k("passwordPlaceholder"),errorMessage:l||"",value:r,onChange:v})]}),(0,o.tZ)(q.xu,{sx:_.recaptcha,children:(0,o.tZ)(Bt,{sitekey:u+"",callback:e=>{p(e)},expiredCallback:()=>{p("")},country:s})}),(0,o.tZ)(q.zx,{disabled:b,size:"lg",sx:_.buttonLogin,onClick:()=>m(b),children:k("loginBtn")}),(0,o.BX)(q.xu,{sx:_.membership,children:[(0,o.BX)(q.XZ,{size:"md",gap:8,checked:d,onChange:h,sx:_.checkbox,children:[(0,o.tZ)(q.Jd,{color:"font_1",variant:"caption1",children:k("activeLongSession")}),(0,o.tZ)(q.u,{sx:_.tooltip,children:(0,o.tZ)(q.g6,{text:k("longSessionTooltip")})})]}),(0,o.BX)(q.xu,{sx:_.loginOption,children:[(0,o.tZ)(q.xu,{onClick:f,css:_.loginOptionLink,children:k("ipSecurity")}),(0,o.BX)(q.xu,{onClick:x,css:_.loginOptionLink,children:[!g&&(0,o.tZ)(q.xu,{css:_.loginOptionLinkSwitch,children:"OFF"}),g&&(0,o.tZ)(q.xu,{style:{color:"#0062df"},css:_.loginOptionLinkSwitch,children:"ON"})]})]})]}),(0,o.BX)(q.Gj,{itemGap:2,sx:_.dotList,dotPosition:"top",children:[(0,o.tZ)(q.b$,{children:(0,o.tZ)(q.Jd,{variant:"body4",color:"font_3",children:k("description.0")})}),(0,o.BX)(q.b$,{children:[(0,o.tZ)(q.Jd,{variant:"body4",color:"font_3",children:k("description.1")+" "}),(0,o.tZ)(q.Jd,{variant:"body4",color:"font_2",children:k("descriptionCs")})]})]})]})};const Nt=e=>({title:K.iv`
+      padding: 0;
+      margin-top: 90px;
+      font-weight: 500;
+      font-size: 32px;
+      line-height: 48px;
+      color: ${e.colors.font_1};
+      text-align: center;
+    `,subTitle:K.iv`
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 27px;
+      color: ${e.colors.font_2};
+      margin-top: 11px;
+      text-align: center;
+    `,recaptcha:K.iv`
+      margin-top: 20px;
+      width: 300px;
+      height: 72px;
+    `,url:K.iv`
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 19px;
+      color: ${e.colors.font_1};
+      margin-top: 6px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    `,urlBlue:K.iv`
+      color: ${e.colors.point_sub};
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    `,buttonLogin:K.iv`
+      margin-top: 40px;
+    `,dotList:K.iv`
+      margin-top: 30px;
+    `,membership:K.iv`
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-top: 22px;
+    `,tooltip:K.iv`
+      width: 16px !important;
+      height: 16px !important;
+      margin-left: 4px !important;
+      & > svg {
+        color: ${e.colors.font_3};
+      }
+      & > svg:hover {
+        color: ${e.colors.point_sub};
+      }
+    `,loginOption:K.iv`
+      margin-top: 0px !important;
+      cursor: pointer;
+      display: inline-block;
+    `,loginOptionLink:K.iv`
+      display: inline-block;
+      font-weight: 400;
+      font-size: 14px;
+      :hover {
+        text-decoration: underline;
+      }
+    `,loginOptionLinkSwitch:K.iv`
+      display: inline-block;
+      margin-left: 5px;
+      width: 26px;
+      color: #999;
+      font-weight: 700;
+      font-size: 14px;
+      font-family: Roboto, Noto Sans KR, sans-serif, Arial, Helvetica;
+      text-align: left;
+    `,otherLoginButton:K.iv`
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 21px;
+      background: transparent;
+      border: unset;
+      color: ${e.colors.font_2};
+      display: block;
+      width: auto;
+      height: auto;
+    `,checkbox:K.iv`
+      & > div::before {
+        margin-top: -2px;
+      }
+    `,textfieldContainer:K.iv`
+      margin-top: 40px;
+    `});var Mt=n(94184),Vt=n.n(Mt),Ht=n(5558),Ft=n.n(Ht),Kt=n(32475),qt=n.n(Kt),jt=n(79833),Jt=n.n(jt);const Wt=e=>{const t=Jt()(Ft()(e/60)),n=Jt()(e%60);return`${qt()(t,2,"0")}:${qt()(n,2,"0")}`};var Gt=n(73689),Ut=n.n(Gt),Qt=n(38250),Yt=n.n(Qt),en=n(51425),tn=n.n(en);const nn=(e,t)=>{const n=Ut()(Yt()(e),tn()((e=>e?e+l()():l()())(t)));return n},on=(0,d.cn)({key:"mePrivateState",default:{isNeedKyc:!0}}),rn=(0,d.nZ)({key:"mePrivateSelector",get:({get:e})=>e(on)}),an=(0,d.nZ)({key:"signinSelector",get:({get:e})=>e(re).phoneOtp}),cn=(0,d.nZ)({key:"timestampDiffSelector",get:({get:e})=>e(X)});var sn=(e,t,n)=>new Promise(((o,i)=>{var r=e=>{try{c(n.next(e))}catch(e){i(e)}},a=e=>{try{c(n.throw(e))}catch(e){i(e)}},c=e=>e.done?o(e.value):Promise.resolve(e.value).then(r,a);c((n=n.apply(e,t)).next())}));const ln=(0,d.nZ)({key:"SmsSelector",get:({get:e})=>({phoneOtp:e(an),mePrivate:e(rn),timestampDiff:e(cn)})}),un=(e=!1)=>{const t=(0,i.useRef)(),n=(0,a.useHistory)(),[o,r]=(0,i.useState)(""),[c,s]=(0,i.useState)(),{phoneOtp:l,mePrivate:u,timestampDiff:p}=(0,d.sJ)(ln),{postCertificationsCompanyPhoneAuth:h,postCertificationsCompanyPhoneAuthVerify:f}=ce(),{txId:g,expiresAt:x}=l,m=(null==l?void 0:l.expiresAt)?Math.max(Math.floor(nn(x,p)/1e3),0):0,{activated:v,expired:y,startTimer:b,stopTimer:w}=xt({callback:()=>{m<=0&&v&&(C(),w())}});(0,i.useEffect)((()=>(S(),()=>{w()})),[]),(0,i.useEffect)((()=>{ot()(l)||S()}),[l]);const k=(e,t)=>{s({setPayload:s,title:e,body:t})},C=()=>{r("")},_=e=>sn(void 0,null,(function*(){if(P)return;Z("인증하기","버튼클릭"),(0,Xe.d)("로그인화면","","로그인화면",{category:"SMS인증",eventDetail:"확인_btn_클릭"});const t=nn(l.expiresAt,p);if(!v&&t<=0)k("알림","시간이 초과되었습니다.");else if(v)try{const e=yield f({tx_id:g,otp:o});if("error"in e){const t=e.error;return s({setPayload:s,title:"알림",body:null==t?void 0:t.message,onClose:()=>{var e,o;"V1::Exceptions::WorkflowExecutionBlocked"===t.name?((0,Xe.d)("api_에러팝업 ","","api_에러팝업 ",{category:"2채널인증_인증횟수초과팝업",eventDetail:null!=(e=null==t?void 0:t.message)?e:""}),n.push(se.tL)):(0,Xe.d)("api_에러팝업 ","","api_에러팝업 ",{category:"2채널인증_인증번호오류팝업",eventDetail:null!=(o=null==t?void 0:t.message)?o:""})}})}if(!(e.state="waiting_totp"))throw Error("알수없는 에러 with sms verify");n.push(se.wY)}catch(e){console.warn(e)}else k("알림","인증번호받기 버튼을 눌러주세요.");e.preventDefault()})),Z=(e,t,n,o)=>{const i=n||"";(0,Xe.y)("알림톡인증",null,e,t,i,"Onboarding_Web")},S=()=>{b(180)},P=(0,i.useMemo)((()=>!o||!ze(o)),[o]);return{verifNum:o,isTimerGo:v,basicPopup:c,setBasicPopup:s,phoneOtp:l,timestampDiff:p,mePrivate:u,handleOTPChange:e=>{const t=e.currentTarget.value.replace(new RegExp("[^0-9]","g"),"");t.length<=6&&r(t)},handleKeyPress:e=>{"Enter"===e.key&&_(e)},handleClickGetVerifNum:e=>{Z("인증번호받기","버튼입력"),(0,Xe.d)("로그인화면","","로그인화면",{category:"SMS인증",eventDetail:"인증번호받기_btn_클릭"}),v?k("알림","이미 인증번호가 발급되었습니다. 잠시 후에 재요청이 가능합니다."):sn(void 0,null,(function*(){try{const e=yield h();if("error"in e){Z("인증번호전송","실패",JSON.stringify(e));const t=e.error;s({setPayload:s,title:"알림",body:null==t?void 0:t.message,onClose:()=>{"V1::Exceptions::ExpiredAccessKey"===t.name&&n.push(se.wY),t.name}})}else(null==e?void 0:e.txId)&&(Z("인증번호전송","성공"),S())}catch(e){console.warn(e)}})),e.preventDefault()},handleClickVerify:_,handleResetInput:C,gap:m,inputVerifNum:t,isExpired:y,isNotValidated:P}},pn=()=>{const e=(0,L.Fg)(),t=K.iv`
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 48px;
+    color: ${e.colors.font_1};
+  `,n=K.iv`
+    font-family: 'Roboto';
+    font-style: normal;
+    margin-top: 90px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  `,i=K.iv`
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+    color: ${e.colors.font_2};
+    margin-top: 10px;
+  `,r=K.iv`
+    width: 600px;
+    margin-top: 60px;
+    gap: 0px;
+  `,a=K.iv`
+    margin-top: 40px;
+  `,c=K.iv`
+    margin-top: 30px;
+    width: 600px;
+    font-size: 14px;
+    line-height: 21px;
+    li {
+      color: #999999;
+      padding-left: 15px;
+      &::before {
+        left: 0px;
+      }
+    }
+    li + li {
+      margin-top: 2px;
+    }
+  `,{verifNum:s,isTimerGo:l,basicPopup:u,setBasicPopup:p,phoneOtp:d,mePrivate:h,handleOTPChange:f,handleKeyPress:g,handleClickGetVerifNum:x,handleClickVerify:m,handleResetInput:v,gap:y,isExpired:b,isNotValidated:w}=un();return d&&h?(0,o.BX)("div",{className:"NewMembership",children:[(0,o.tZ)(ke.fz,{payload:u}),(0,o.BX)(q.xu,{sx:n,children:[(0,o.tZ)(q.xu,{sx:t,children:"SMS 인증번호를 입력해 주세요."}),(0,o.tZ)(q.xu,{sx:i,children:"회원님의 안전한 계정 보호를 위해 SMS로 한 번 더 인증합니다."}),(0,o.BX)(q.Kq,{direction:"column",sx:r,children:[(0,o.BX)(q.xu,{sx:K.iv`
+              position: relative;
+              width: 100%;
+            `,children:[(0,o.tZ)(q.nv,{size:"L",autoFocus:!0,disabled:!l,value:s,placeholder:"인증번호 입력",onKeyPress:e=>g(e),onChange:e=>f(e)}),(0,o.tZ)("span",{className:Vt()("FormTypeInputWithCount__count",{"FormTypeInputWithCount__count--over":!l}),children:Wt(y)})]}),b&&(0,o.tZ)("div",{className:"FormType__alert",children:"시간이 초과되었습니다. 다시 시도해주세요."}),l?(0,o.tZ)(q.zx,{onClick:m,disabled:w,size:"lg",sx:a,children:"확인"}):(0,o.tZ)(q.zx,{onClick:x,size:"lg",sx:a,children:"인증번호 받기"})]}),(0,o.BX)(q.Gj,{itemGap:2,sx:c,children:[(0,o.tZ)(q.b$,{children:"SMS 인증번호 5회 오류 시 2시간 동안 로그인이 제한됩니다."}),(0,o.tZ)(q.b$,{children:"업비트에 등록된 휴대전화 번호로 SMS 메시지가 발송됩니다"}),(0,o.BX)(q.b$,{children:["인증에 문제가 있을 시 고객센터로 문의해 주세요. ",(0,o.tZ)(q.Jd,{color:"font_2",children:"고객센터 1588-5682"})]})]})]})]}):null};me(pn);const dn=()=>{const e=(0,i.useRef)(),[t,n]=(0,i.useState)(""),[o,r]=(0,i.useState)(),{phoneOtp:s,mePrivate:l,timestampDiff:u}=(0,d.sJ)(ln),[p]=(0,d.FV)(be),{workflow:h,auths:f}=p,{txid:g,returns:x}=h,{token:m}=x,v=(0,a.useHistory)(),{postCertificationsResetPasswordPhoneAuth:y,postCertificationsResetPasswordPhoneAuthVerify:b}=wt(),{activated:w,expired:k,remainedSeconds:C,startTimer:_,stopTimer:Z}=xt({callback:()=>{nn(s.expiresAt,u)<=0&&w&&(P(),Z())}});(0,i.useEffect)((()=>($(),()=>{Z()})),[]),(0,i.useEffect)((()=>{ot()(s)||O()}),[s]);const S=(e,t)=>{r({setPayload:r,title:e,body:t})},P=()=>{n("")},$=()=>{y({workflow_txid:g}).then((t=>{if("error"in t){A("인증번호전송","실패",JSON.stringify(t));const e=t.error;r({setPayload:r,title:"알림",body:null==e?void 0:e.message,onClose:()=>{"V1::Exceptions::ExpiredAccessKey"===e.name?v.push(se.wY):"V1::Exceptions::CompanyResetPasswordCertificationTooManySmsAuthRequest"===e.name&&v.push(c.R41)}})}else t.auths&&(A("인증번호전송","성공"),O(),e&&e.current&&e.current.input.focus())}))},B=e=>{return n=void 0,o=null,i=function*(){if(R)return;A("인증하기","버튼클릭");const n=nn(s.expiresAt,u);if(!w&&n<=0)S("알림","시간이 초과되었습니다.");else if(w)try{const e=yield b({token_txid:m,workflow_txid:g,security_token:t});if("error"in e){const t=e.error;r({setPayload:r,title:"알림",body:null==t?void 0:t.message,onClose:()=>{"V1::Exceptions::WorkflowExecutionBlocked"===t.name&&v.push(c.R41)}})}}catch(e){console.warn(e)}else S("알림","인증번호받기 버튼을 눌러주세요.");e.preventDefault()},new Promise(((e,t)=>{var r=e=>{try{c(i.next(e))}catch(e){t(e)}},a=e=>{try{c(i.throw(e))}catch(e){t(e)}},c=t=>t.done?e(t.value):Promise.resolve(t.value).then(r,a);c((i=i.apply(n,o)).next())}));var n,o,i},A=(e,t,n,o)=>{const i=n||"";(0,Xe.y)("알림톡인증",null,e,t,i,"Onboarding_Web")},O=()=>{_(180)},R=(0,i.useMemo)((()=>!t||!ze(t)),[t]);return{auths:f,verifNum:t,isTimerGo:w,basicPopup:o,setBasicPopup:r,phoneOtp:s,mePrivate:l,handleOTPChange:e=>{const t=e.currentTarget.value.replace(new RegExp("[^0-9]","g"),"");t.length<=6&&n(t)},handleKeyPress:e=>{"Enter"===e.key&&B(e)},handleClickGetVerifNum:e=>{A("인증번호받기","버튼입력"),w?S("알림","이미 인증번호가 발급되었습니다. 잠시 후에 재요청이 가능합니다."):$(),e.preventDefault()},handleClickVerify:B,handleResetInput:P,remainedSeconds:C,inputVerifNum:e,isExpired:k,isNotValidated:R}},hn=e=>{const t=(0,L.Fg)(),n=K.iv`
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 48px;
+    color: ${t.colors.font_1};
+  `,i=K.iv`
+    font-family: 'Roboto';
+    font-style: normal;
+    margin-top: 90px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  `,r=K.iv`
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+    color: ${t.colors.font_2};
+    margin-top: 10px;
+  `,a=K.iv`
+    width: 600px;
+    margin-top: 60px;
+    gap: 0px;
+  `,c=K.iv`
+    margin-top: 40px;
+  `,s=K.iv`
+    margin-top: 30px;
+    width: 600px;
+    font-size: 14px;
+    line-height: 21px;
+    color: #999999;
+  `,{verifNum:l,isTimerGo:u,basicPopup:p,setBasicPopup:d,phoneOtp:h,mePrivate:f,handleOTPChange:g,handleKeyPress:x,handleClickGetVerifNum:m,handleClickVerify:v,handleResetInput:y,remainedSeconds:b,inputVerifNum:w,isExpired:k,isNotValidated:C}=dn();return h&&f?(0,o.BX)("div",{className:"NewMembership",children:[(0,o.tZ)(ke.fz,{payload:p}),(0,o.BX)(q.xu,{sx:i,children:[(0,o.tZ)(q.xu,{sx:n,children:"SMS 인증번호를 입력해 주세요."}),(0,o.tZ)(q.xu,{sx:r,children:"회원님의 안전한 계정 보호를 위해 SMS로 한 번 더 인증합니다."}),(0,o.BX)(q.Kq,{direction:"column",sx:a,children:[(0,o.BX)(q.xu,{sx:K.iv`
+              position: relative;
+              width: 100%;
+            `,children:[(0,o.tZ)(q.nv,{size:"L",ref:w,autoFocus:!0,disabled:!u,value:l,placeholder:"인증번호 입력",onKeyPress:e=>x(e),onChange:e=>g(e)}),(0,o.tZ)("span",{className:Vt()("FormTypeInputWithCount__count",{"FormTypeInputWithCount__count--over":!u}),children:Wt(b)})]}),k&&(0,o.tZ)("div",{className:"FormType__alert",children:"시간이 초과되었습니다. 다시 시도해주세요."}),u?(0,o.tZ)(q.zx,{onClick:v,disabled:C,size:"lg",sx:c,children:"확인"}):(0,o.tZ)(q.zx,{onClick:m,size:"lg",sx:c,children:"인증번호받기"})]}),(0,o.BX)(q.Gj,{itemGap:2,sx:s,children:[(0,o.tZ)(q.b$,{children:"SMS 인증번호 5회 오류 시 2시간 동안 로그인이 제한됩니다."}),(0,o.tZ)(q.b$,{children:"업비트에 등록된 휴대전화 번호로 SMS 메시지가 발송됩니다."}),(0,o.BX)(q.b$,{children:["인증에 문제가 있을 시 고객센터로 문의해 주세요. ",(0,o.tZ)(q.Jd,{color:"font_2",children:"고객센터 1588-5682"})]})]})]})]}):null};me(hn);var fn=n(60671);const gn="https://play.google.com/store/apps/details?id=com.dunamu.exchange",xn="https://itunes.apple.com/kr/app/%EC%97%85%EB%B9%84%ED%8A%B8-%EB%8C%80%ED%95%9C%EB%AF%BC%EA%B5%AD-%EC%B5%9C%EB%8B%A4-%EA%B0%80%EC%83%81%ED%99%94%ED%8F%90-%EA%B1%B0%EB%9E%98%EC%86%8C/id1256371195?mt=8";var mn=n(47617),vn=(e,t,n)=>new Promise(((o,i)=>{var r=e=>{try{c(n.next(e))}catch(e){i(e)}},a=e=>{try{c(n.throw(e))}catch(e){i(e)}},c=e=>e.done?o(e.value):Promise.resolve(e.value).then(r,a);c((n=n.apply(e,t)).next())}));const yn={name:"V1::Exceptions::SanctionCountry",message:"접속하신 국가에서는 업비트 이용이 불가합니다.\n문의사항 있을 시, 고객센터로 문의 부탁드립니다.",dialog:"popup",title:"안내"},bn="done",wn=()=>{const{ccxHost:e}=(0,i.useContext)(D),t=H(),{callback:n}=(0,i.useContext)(D),o=String("d7e7ad2a688ce444a8155bd02a7bd145991654ff669561ac6816acfd32b981ee");return{postQrcodeSession:n=>vn(void 0,[n],(function*({checkedLongSession:n,isIpSecurity:i}){const r=n?86400:10800;return yield t.post({url:`${e}/upbit/qrcode/session`,data:{clientId:o,signinExpiresIn:r,useIpSecurity:i}})})),getQrcodeSession:i=>vn(void 0,[i],(function*({sessionToken:i}){const r=yield t.get({url:`${e}/upbit/qrcode/session`,params:{clientId:o,sessionToken:i}});return"error"in r||n({session:r.oauthToken}),r})),mobileWebAuth:i=>vn(void 0,[i],(function*({token:i,checkedLongSession:r}){const a=r?86400:10800,c=yield t.post({url:`${e}/upbit/web/auth`,data:{clientId:o,webLoginToken:i,signinExpiresIn:a,useIpSecurity:!0}});return"error"in c||"all"===(null==c?void 0:c.scope)&&n({session:c}),c}))}};var kn=wn,Cn=(e,t,n)=>new Promise(((o,i)=>{var r=e=>{try{c(n.next(e))}catch(e){i(e)}},a=e=>{try{c(n.throw(e))}catch(e){i(e)}},c=e=>e.done?o(e.value):Promise.resolve(e.value).then(r,a);c((n=n.apply(e,t)).next())}));const _n=(e,t)=>{const n=Ut()(Yt()(e),tn()((e=>e?e+l()():l()())(t)));return n},Zn=()=>{const e=(0,a.useHistory)(),{search:t}=(0,a.useLocation)(),[n,o]=(0,i.useState)(),r=(0,L.Fg)(),[c,s]=(0,i.useState)({show:!1,message:"",callback:void 0}),{getQrcodeSession:l,postQrcodeSession:u}=wn(),[p]=(0,d.FV)(X),{qrcodeToken:h,sessionToken:f,authorizeNumber:g}=n||{},{remainedSeconds:x,startTimer:m,stopTimer:v}=xt({callback:()=>Cn(void 0,null,(function*(){return yield b()}))}),y=(0,i.useCallback)((()=>Cn(void 0,null,(function*(){var e,t,n;const i=null==(t=null==(e=window.history)?void 0:e.state)?void 0:t.state;try{const e=yield u({checkedLongSession:null==i?void 0:i.checkedLongSession,isIpSecurity:null==i?void 0:i.isIpSecurity});if(e)if("error"in e)s({show:!0,message:e.error.message,callback:(null==(n=e.error)?void 0:n.name)!==yn.name?y:void 0});else{o(e);const t=_n(e.expiresAt,p);m(t/1e3)}}catch(e){(0,Xe.d)("QR코드로그인","useQRCodeLogin","QR코드로그인",{category:"POST_QRCODE_SESSION_실패",eventDetail:JSON.stringify(e)}),(0,mn.Tb)(e,"info")}}))),[u,m,p,s]);(0,i.useEffect)((()=>{y(),(0,Xe.d)("QR코드로그인","useQRCodeLogin","QR코드로그인",{eventDetail:"QR코드로그인화면_진입"})}),[]);const b=(0,i.useCallback)((()=>Cn(void 0,null,(function*(){var n,o,i;if(!f)return;const r=yield l({sessionToken:f});if("error"in r){switch(v(),null==(n=r.error)?void 0:n.name){case"V1::Exceptions::QrcodeTokenExpired":(0,Xe.d)("QR코드로그인","","안내팝업",{category:"안내팝업_인증코드만료",eventDetail:"인증코드가 만료되었습니다. 다시 시도해 주세요."});break;case"V1::Exceptions::CancelQrLogin":(0,Xe.d)("QR코드로그인","","안내팝업",{category:"안내팝업_QR로그인취소",eventDetail:"QR로그인이 취소되었습니다. 다시 시도해 주세요."})}s({show:!0,message:null==(o=r.error)?void 0:o.message,callback:(null==(i=r.error)?void 0:i.name)!==yn.name?y:void 0})}else if(r.status===bn&&(v(),r.oauthToken)){const{scope:n,memberUuid:o}=r.oauthToken;"all"===n&&gt({history:e,search:t})}}))),[y,l,e,t,f,v]),w=h?(e=>`${window.location.origin}${se.jT}?type=qrcode&token=${e}&exchangeCode=kr`)(h+""):void 0;return{qrcodeData:n,remainedSeconds:x,theme:r,authorizeNumber:g,popupData:c,setPopupData:s,getLoginQRCode:y,qrcodeUrl:w}},Sn=()=>(0,o.tZ)("span",{style:{verticalAlign:"middle"},children:(0,o.tZ)("svg",{width:"16",height:"16",viewBox:"0 0 16 16",fill:"none",xmlns:"http://www.w3.org/2000/svg",children:(0,o.tZ)("path",{d:"M0 7.38462V8.61539H16.6154V7.38462H0ZM1.53846 1.23077H5.23077V0H0.307692V4.92308H1.53846V1.23077ZM1.53846 11.0769H0.307692V16H5.23077V14.7692H1.53846V11.0769ZM15.0769 14.7692H11.3846V16H16.3077V11.0769H15.0769V14.7692ZM15.0769 4.92308H16.3077V0H11.3846V1.23077H15.0769V4.92308Z",fill:"#666666"})})}),Pn=i.memo((({remainedSeconds:e,theme:t,qrcodeUrl:n})=>{const i=Jt()(Ft()(e/60)),r=Jt()(Ft()(e%60)),a=n?`${qt()(i,2,"0")}:${qt()(r,2,"0")}`:"--:--";return(0,o.BX)(q.Kq,{sx:Bn(t).qrCodeBox,direction:"column",spacing:8,justifyContent:"center",alignItems:"center",children:[n?(0,o.tZ)(Se.Z,{value:n,size:160,includeMargin:!0}):null,(0,o.tZ)(q.xu,{sx:Bn(t).time,children:a})]})})),$n=()=>{const{qrcodeData:e,remainedSeconds:t,theme:n,authorizeNumber:i,popupData:r,setPopupData:a,getLoginQRCode:c,qrcodeUrl:s}=Zn(),{t:l}=(0,j.$)("users",{keyPrefix:"qrCode"}),u=()=>(0,o.BX)(q.Kq,{direction:"column",sx:Bn(n).descriptionContainer,children:[(0,o.BX)(q.xu,{sx:Bn(n).descriptionInner,children:[(0,o.BX)(q.dq,{sx:Bn(n).numberList,children:[(0,o.tZ)(q.eI,{children:l("step1")}),(0,o.tZ)(q.eI,{children:(0,o.tZ)(fn.c,{ns:"users",i18nKey:"qrCode.step2",components:[(0,o.tZ)(Sn,{},0)]})}),(0,o.tZ)(q.eI,{children:l("step3")})]}),(0,o.tZ)(q.xu,{sx:Bn(n).authorizeContainer,children:i}),(0,o.tZ)(q.Gj,{itemGap:2,sx:Bn(n).dotList,children:(0,o.BX)(q.b$,{children:[l("guide"),(0,o.tZ)("a",{href:"https://upbitcs.zendesk.com/hc/ko/articles/11661139877913",onClick:()=>{(0,Xe.d)("QR코드로그인","","QR코드로그인",{category:"QR코드로그인자세한방법확인하기_btn",eventDetail:"QR코드로그인자세한방법확인하기_btn_클릭"})},children:l("guideBtn")})]})})]}),(0,o.BX)(q.Kq,{direction:"row",sx:Bn(n).buttonContainer,children:[(0,o.BX)("a",{href:gn,target:"_blank",rel:"noreferrer",onClick:()=>{(0,Xe.d)("QR코드로그인","","QR코드로그인",{category:"APP설치_btn",eventDetail:"안드로이드앱_btn_클릭"})},children:[(0,o.tZ)(q.JO,{type:"ico_google_play",width:13,height:14}),l("androidApp")]}),(0,o.BX)("a",{href:xn,target:"_blank",rel:"noreferrer",onClick:()=>{(0,Xe.d)("QR코드로그인","","QR코드로그인",{category:"APP설치_btn",eventDetail:"아이폰앱_btn_클릭"})},children:[(0,o.tZ)(q.JO,{type:"appmarket_ios",width:13,height:16}),l("iosApp")]})]})]}),p=()=>{var e;return r.show?(0,o.BX)(o.HY,{children:[(0,o.tZ)(q.JU,{}),(0,o.BX)(q.GI,{children:[(0,o.tZ)(q.jo,{children:"안내"}),(0,o.tZ)(q.dD,{children:(0,o.tZ)(q.g6,{text:null!=(e=r.message)?e:""})}),(0,o.tZ)(q.y3,{children:(0,o.tZ)(q.zx,{variant:"contained",onClick:()=>{var e;null==(e=r.callback)||e.call(r),a({show:!1,message:""})},children:"확인"})})]})]}):null};return(0,o.BX)(o.HY,{children:[(0,o.tZ)(p,{}),(0,o.BX)(q.xu,{sx:Bn(n).container,children:[(0,o.tZ)(q.xu,{sx:Bn(n).Title,children:l("title")}),(0,o.tZ)(q.xu,{sx:Bn(n).SubTitle,children:l("subTitle")}),(0,o.BX)(q.xu,{sx:Bn(n).url,children:[(0,o.BX)(q.xu,{sx:Bn(n).urlBlue,children:[(0,o.tZ)(q.JO,{type:"ico_lock",width:10,height:14}),"https:"]}),(0,o.tZ)(q.xu,{children:"//upbit.com"})]}),(0,o.BX)(q.Kq,{direction:"row",sx:Bn(n).qrContainer,children:[(0,o.tZ)(Pn,{remainedSeconds:t,theme:n,qrcodeUrl:s}),(0,o.tZ)(u,{})]})]})]})},Bn=e=>({container:K.iv`
+      background: ${e.colors.bg};
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      margin-top: 90px;
+    `,Title:K.iv`
+      font-weight: 500;
+      font-size: 32px;
+      line-height: 48px;
+      color: ${e.colors.font_1};
+    `,SubTitle:K.iv`
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 27px;
+      color: ${e.colors.font_2};
+      margin-top: 11px;
+    `,url:K.iv`
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 19px;
+      color: #000;
+      margin-top: 6px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    `,urlBlue:K.iv`
+      color: ${e.colors.point_sub};
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    `,qrContainer:K.iv`
+      width: 600px;
+      min-height: 324px;
+      border: 1px solid ${e.colors.line_light};
+      margin: 0 auto;
+      margin-top: 40px;
+      margin-bottom: 41px;
+      gap: 0px;
+      text-align: left;
+      align-items: stretch;
+      align-content: stretch;
+    `,qrCodeBox:K.iv`
+      width: 230px;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 24px;
+      color: ${e.colors.point_sub};
+      gap: 6px;
+    `,descriptionContainer:K.iv`
+      flex: 1;
+      gap: 0px;
+      border-left: 1px solid ${e.colors.line_light};
+    `,descriptionInner:K.iv`
+      width: 100%;
+      box-sizing: border-box;
+      padding: 40px 30px 30px;
+      gap: 0px;
+    `,numberList:K.iv`
+      font-weight: 400;
+      font-size: 15px;
+      line-height: 21px;
+      color: ${e.colors.font_2};
+
+      li::before {
+        top: 0px;
+      }
+
+      li + li {
+        margin-top: 4px;
+      }
+    `,authorizeContainer:K.iv`
+      margin-top: 20px;
+      background: ${e.colors.bg_list_header};
+      border-radius: 2px;
+      font-weight: 500;
+      font-size: 30px;
+      line-height: 45px;
+      color: ${e.colors.point_sub};
+      text-align: center;
+      letter-spacing: 10px;
+      width: 100%;
+      padding: 8px 0px;
+    `,dotList:K.iv`
+      color: ${e.colors.font_3};
+      font-weight: 400;
+      font-size: 13px;
+      line-height: 19px;
+      margin-top: 14px;
+
+      a {
+        color: ${e.colors.font_2};
+        margin-left: 6px;
+        text-decoration: underline;
+      }
+    `,buttonContainer:K.iv`
+      gap: 0px;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 21px;
+      width: 100%;
+      border-top: 1px solid ${e.colors.line_light};
+      text-align: center;
+
+      a {
+        flex: 1;
+        padding: 19px 0px;
+        position: relative;
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 12px;
+        color: ${e.colors.font_2};
+      }
+
+      a + a::before {
+        content: ' ';
+        width: 1px;
+        height: 20px;
+        background: ${e.colors.line_light};
+        position: absolute;
+        left: 0px;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+    `,time:K.iv`
+      min-height: 21px;
+    `});var An=n(23533),On=n(54601);var Rn=()=>{const e=(0,L.Fg)(),t=K.iv`
+    background: ${e.colors.bg};
+    display: flex;
+    flex-direction: column;
+    padding: 128px 40px 78px;
+    font-family: 'Noto Sans KR';
+    font-style: normal;
+  `,n=K.iv`
+    font-weight: 400;
+    font-size: 18px;
+    text-align: center;
+    line-height: 27px;
+    color: ${e.colors.font_1};
+  `,r=K.iv`
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 22px;
+    text-align: center;
+    color: ${e.colors.font_2};
+    margin-top: 16px;
+  `,a=K.iv`
+    margin-top: 20px;
+    background: ${e.colors.bg_btn_primary};
+    color: ${e.colors.font_white};
+    font-weight: 400;
+    font-size: 16px;
+    height: 50px;
+    line-height: 50px;
+
+    &:hover,
+    &:active,
+    &:visited {
+      color: ${e.colors.font_white};
+    }
+  `,c=K.iv`
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 19px;
+    color: ${e.colors.font_2};
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+
+    a {
+      flex: 1;
+      padding: 11px 0px;
+      position: relative;
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      border: 1px solid ${e.colors.line_dark};
+      border-radius: 2px;
+    }
+  `,s=(0,i.useCallback)((()=>{location.href="https://upbit.onelink.me/dH32/j3jsnszb"}),[]);return(0,o.tZ)(On.Z,{className:"",children:(0,o.BX)(q.xu,{sx:t,children:[(0,o.tZ)(q.xu,{sx:n,children:"QR로그인 안내"}),(0,o.BX)(q.xu,{sx:r,children:["업비트 앱 > 내 정보 > 우측 상단의 ",(0,o.tZ)(Sn,{}),(0,o.tZ)("br",{}),"아이콘을 눌러 QR 코드를 스캔해 주세요."]}),(0,o.tZ)(An.zx,{sx:a,onClick:s,children:"업비트 앱 열기"}),(0,o.BX)(q.Kq,{direction:"row",spacing:4,sx:c,children:[(0,o.BX)("a",{href:_e.rR,target:"_blank",rel:"noreferrer",children:[(0,o.tZ)(q.JO,{type:"ico_google_play",width:14,height:15}),"안드로이드 앱"]}),(0,o.BX)("a",{href:_e.uq,target:"_blank",rel:"noreferrer",children:[(0,o.tZ)(q.JO,{type:"appmarket_ios",width:14,height:17}),"아이폰 앱"]})]})]})})},Tn=n(61384),zn=Object.defineProperty,En=Object.getOwnPropertySymbols,In=Object.prototype.hasOwnProperty,Xn=Object.prototype.propertyIsEnumerable,Ln=(e,t,n)=>t in e?zn(e,t,{enumerable:!0,configurable:!0,writable:!0,value:n}):e[t]=n;const Dn=()=>{const e=(0,a.useHistory)(),{pathname:t,search:n}=(0,a.useLocation)(),[o,c]=(0,i.useState)(!1),[s,l]=(0,i.useState)(!1),[u,p]=(0,i.useState)(""),[d,h]=(0,i.useState)(!1),[f,g]=(0,i.useState)(!Tn.t),[x,m]=(0,i.useState)(null),[v,y]=(0,i.useState)(null),[b,w]=(0,i.useState)(""),[k,C]=(0,i.useState)(),[_,Z]=(0,i.useState)(),{t:S}=(0,j.$)(),P=(0,G.useSelector)(Et.Gq),$=(0,i.useMemo)((()=>(e=>{try{const t=r.parse(e).state;if(tt()(t))return null;const n=lt(decodeURIComponent(String(t)));return st(n)}catch(e){return null}})(n)),[n]);(0,i.useEffect)((()=>{P&&gt({history:e,search:n,state:$})}),[P,$]);const B=(0,i.useCallback)(((e,t,n)=>{const o=n||"";(0,Xe.y)("로그인",null,e,t,o,"Onboarding_Web")}),[]),A=(0,i.useCallback)((()=>{(0,Xe.d)("로그인화면","","로그인화면",{category:"법인로그인",eventDetail:"법인회원로그인_btn_클릭"}),e.push(`${se.k7}${n}`,{checkedLongSession:d,isIpSecurity:f})}),[d,e,f,n]),O=(0,i.useCallback)((t=>{(0,Xe.d)("로그인화면","","로그인화면",{category:"QR코드로그인",eventDetail:"QR코드로그인_btn_클릭"}),e.push(`${se.PO}${n}`,{checkedLongSession:d,isIpSecurity:f})}),[e,n,d,f]),R=(0,i.useCallback)((e=>{e.preventDefault();const t=!d;B("로그인상태유지","클릭",t?"true":"false"),h(t)}),[d]),T=(0,i.useCallback)((e=>{e.preventDefault(),g(!f),m(f?null:{title:S("users.signIn.ipsecuritytitle"),body:S("users.signIn.ipsecuritymsg"),setPayload:()=>null,onClose:()=>{m(null)}})}),[f]),z=(0,i.useCallback)((()=>{l(!s)}),[s]);return{loginSuccess:o,openLongSessionDesc:s,oauthApplicationName:u,oauthApplicationLogoUri:b,checkedLongSession:d,isIpSecurity:f,ipSecurityPopup:x,setIpSecurityPopup:m,ipSecurityTextPopup:v,setIpSecurityTextPopup:y,handleClickCheck:R,handleTextIpSecurity:e=>{e.preventDefault(),y({title:S("users.signIn.ipsecuritytitle"),body:S("users.signIn.ipsecuritytextmsg"),setPayload:()=>null,onClose:()=>{y(null)}})},handleToggleIpSecurity:T,handleClickCompanySignin:A,basicPopup:_,confirmPopup:k,handleClickUpbitSignin:O,handleClickClose:z}},Nn=e=>{if(ot()(e))return null;const t=((e,t)=>{for(var n in t||(t={}))In.call(t,n)&&Ln(e,n,t[n]);if(En)for(var n of En(t))Xn.call(t,n)&&Ln(e,n,t[n]);return e})({},e);try{return encodeURIComponent(btoa(JSON.stringify(t)))}catch(e){return null}};var Mn=()=>{const{checkedLongSession:e,oauthApplicationLogoUri:t,isIpSecurity:n,ipSecurityPopup:i,ipSecurityTextPopup:r,handleClickCheck:a,handleTextIpSecurity:c,handleToggleIpSecurity:s,basicPopup:l,confirmPopup:u,handleClickUpbitSignin:p,handleClickCompanySignin:d}=Dn(),h=(0,L.Fg)(),{t:f}=(0,j.$)("users",{keyPrefix:"signIn"});return(0,o.BX)("div",{className:"NewMembership",children:[i&&(0,o.tZ)(ke.ZP,{payload:i}),r&&(0,o.tZ)(ke.ZP,{payload:r}),l&&(0,o.tZ)(ke.ZP,{payload:l}),u&&(0,o.tZ)(Ze.ZP,{payload:u}),(0,o.BX)(q.xu,{className:"subMain whiteSubMain",sx:K.iv`
+          border-bottom: unset !important;
+        `,children:[t&&(0,o.BX)(q.xu,{className:"whiteSubMain__banner",style:{marginBottom:"100px"},children:["업비트 계정으로",(0,o.tZ)("img",{src:t,alt:"",className:"whiteSubMain__banner__logo"}),"서비스를 이용하실 수 있습니다."]}),(0,o.BX)(q.xu,{children:[(0,o.tZ)(q.xu,{sx:Vn(h).title,children:f("title")}),(0,o.tZ)(q.xu,{sx:Vn(h).subTitle,children:f("subTitle")}),(0,o.BX)(q.xu,{sx:Vn(h).url,children:[(0,o.BX)(q.xu,{sx:Vn(h).urlBlue,children:[(0,o.tZ)(q.JO,{type:"ico_lock",width:10,height:14}),"https:"]}),(0,o.tZ)(q.xu,{children:"//upbit.com"})]}),(0,o.tZ)(q.zx,{size:"lg",sx:Vn(h).buttonUpbit,onClick:p,children:f("qrLoginBtn")}),(0,o.BX)(q.xu,{sx:Vn(h).membership,children:[(0,o.BX)(q.XZ,{gap:8,size:"md",checked:e,onChange:a,sx:Vn(h).checkbox,children:[(0,o.tZ)(q.Jd,{color:"font_1",variant:"caption1",children:f("activeLongSession")}),(0,o.tZ)(q.u,{sx:Vn(h).tooltip,children:(0,o.tZ)("p",{dangerouslySetInnerHTML:{__html:f("longSessionTooltip")}})})]}),(0,o.BX)(q.xu,{sx:Vn(h).loginOption,children:[(0,o.tZ)("a",{onClick:e=>c(e),href:"",css:Vn(h).loginOptionLink,children:f("ipSecurity")}),(0,o.BX)("a",{onClick:e=>s(e),href:"",css:Vn(h).loginOptionLink,children:[!n&&(0,o.tZ)(q.xu,{css:Vn(h).loginOptionLinkSwitch,children:"OFF"}),n&&(0,o.tZ)(q.xu,{style:{color:"#0062df"},css:Vn(h).loginOptionLinkSwitch,children:"ON"})]})]})]}),(0,o.tZ)(q.Gj,{itemGap:2,sx:Vn(h).dotList,dotPosition:"top",children:(0,o.BX)(q.b$,{children:[(0,o.tZ)(q.Jd,{tag:"div",variant:"body4",children:f("companyLoginDesc")}),(0,o.tZ)(q.Jd,{variant:"body4",color:"font_2",sx:Vn(h).otherLoginButton,onClick:d,children:f("companyLoginBtn")})]})})]})]})]})};const Vn=e=>({title:K.iv`
+      padding: 0;
+      margin-top: 30px;
+      font-weight: 500;
+      font-size: 32px;
+      line-height: 48px;
+      color: ${e.colors.font_1};
+      text-align: center;
+    `,subTitle:K.iv`
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 27px;
+      color: ${e.colors.font_2};
+      margin-top: 11px;
+      text-align: center;
+    `,url:K.iv`
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 19px;
+      color: ${e.colors.font_1};
+      margin-top: 6px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    `,urlBlue:K.iv`
+      color: ${e.colors.point_sub};
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    `,buttonUpbit:K.iv`
+      margin-top: 40px;
+    `,dotList:K.iv`
+      margin-top: 26px;
+      div {
+        display: inline-block;
+      }
+      li {
+        color: ${e.colors.font_3};
+      }
+      li + li {
+        margin-top: 2px;
+      }
+    `,membership:K.iv`
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-top: 22px;
+    `,tooltip:K.iv`
+      width: 16px !important;
+      height: 16px !important;
+      margin-left: 4px !important;
+      & > svg {
+        color: ${e.colors.font_3};
+      }
+      & > svg:hover {
+        color: ${e.colors.point_sub};
+      }
+    `,loginOption:K.iv`
+      margin-top: 0px !important;
+      cursor: pointer;
+      display: inline-block;
+      width: auto;
+      display: flex;
+      align-items: center;
+    `,loginOptionLink:K.iv`
+      display: inline-block;
+      font-weight: 400;
+      font-size: 14px;
+    `,loginOptionLinkSwitch:K.iv`
+      display: inline-block;
+      margin-top: 1px;
+      margin-left: 5px;
+      line-height: 20.5px;
+      width: 26px;
+      color: #999;
+      font-weight: 700;
+      font-size: 14px;
+      font-family: Roboto, Noto Sans KR, sans-serif, Arial, Helvetica;
+      text-align: left;
+    `,otherLoginButton:K.iv`
+      text-decoration: underline;
+      cursor: pointer;
+      margin-left: 4px;
+    `,checkbox:K.iv`
+      & > div::before {
+        margin-top: -2px;
+      }
+    `}),Hn=()=>(0,o.tZ)(St,{children:(0,o.BX)(a.Switch,{children:[(0,o.tZ)(a.Route,{exact:!0,path:se.t9,component:Zt}),(0,o.tZ)(a.Route,{exact:!0,path:se.AS,component:Ce}),(0,o.tZ)(a.Route,{exact:!0,path:se.tr,component:kt}),(0,o.tZ)(a.Route,{exact:!0,path:se.Au,component:hn})]})});var Fn=e=>(Eo(e),(0,o.BX)(a.Switch,{children:[(0,o.tZ)(a.Redirect,{exact:!0,from:se.tH,to:se.sT}),(0,o.tZ)(a.Route,{exact:!0,path:se.sT,component:Mn}),(0,o.tZ)(a.Route,{exact:!0,path:se.PO,component:$n}),(0,o.tZ)(a.Route,{exact:!0,path:se.jT,component:Rn}),(0,o.tZ)(a.Redirect,{exact:!0,from:se.tL,to:se.k7}),(0,o.tZ)(a.Route,{exact:!0,path:se.k7,component:Dt}),(0,o.tZ)(a.Route,{exact:!0,path:se.zF+"/:txid",component:yt}),(0,o.tZ)(a.Route,{exact:!0,path:se.Sk,component:pn}),(0,o.tZ)(a.Route,{exact:!0,path:se.wY,component:Te}),(0,o.tZ)(a.Route,{exact:!0,path:se.jd,component:ye}),(0,o.tZ)(a.Route,{path:se.x4,component:Hn})]})),Kn=n(76),qn=n(62401);var jn=me((()=>{const{basicPopup:e,activated:t,code:n,handleInputChange:i,handleKeyPress:r,handleClickVerify:a,invalidCodeMessage:s,handleClickReset:l}=vt(),u=(0,L.Fg)(),{t:p}=(0,j.$)("global"),d=!ze(n)||t;return(0,o.BX)(o.HY,{children:[(0,o.tZ)(qn.f,{payload:e}),(0,o.tZ)("header",{className:"underB",children:(0,o.tZ)("h1",{children:(0,o.tZ)(Kn.rU,{to:c.ev4,title:"Upbit",children:"Upbit"})})}),(0,o.tZ)("section",{className:"container",children:(0,o.BX)(q.Kq,{direction:"column",sx:Jn(u).container,className:"loginB",children:[(0,o.tZ)(q.xu,{sx:Jn(u).title,children:(0,o.tZ)(q.g6,{text:p("users.twoFactorAuth.title")})}),(0,o.tZ)(q.xu,{sx:Jn(u).desc,children:(0,o.tZ)(q.g6,{text:p("users.twoFactorAuth.description2")})}),(0,o.tZ)(An.nv,{autoFocus:!0,disabled:t,value:n,placeholder:p("users.twoFactorAuth.inputOtp"),error:!!s,sx:Jn(u).textfield,errorMessage:s||"",onChange:i,onKeyPress:r,onClickReset:l}),(0,o.tZ)(q.zx,{sx:Jn(u,d).button,onClick:e=>{a(e.nativeEvent)},disabled:d,children:p("ui.confirmButton")}),(0,o.BX)(An.Gj,{itemGap:2,dotPosition:"top",sx:Jn(u).dotlist,children:[(0,o.tZ)(An.b$,{children:p("users.twoFactorAuth.freezeSignin")}),(0,o.BX)(An.b$,{children:[(0,o.tZ)(q.xu,{children:p("users.twoFactorAuth.unableToAuth")}),(0,o.tZ)(q.xu,{sx:Jn(u).support,children:p("users.signIn.support")})]})]})]})})]})}));const Jn=(e,t)=>({container:K.iv`
+      background: ${e.colors.bg};
+      text-align: center;
+      gap: 0px;
+      padding: 0px 40px;
+      box-sizing: border-box;
+    `,title:K.iv`
+      font-weight: 400;
+      font-size: 27px;
+      line-height: 40px;
+      margin-top: 40px;
+      color: ${e.colors.font_1};
+      text-align: left;
+    `,desc:K.iv`
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 25px;
+      color: ${e.colors.font_2};
+      margin-top: 16px;
+      text-align: left;
+    `,textfield:K.iv`
+      margin-top: 55px;
+      text-align: left;
+    `,button:K.iv`
+      margin-top: 45px;
+      border: unset;
+      border-radius: 0px;
+      height: 46px;
+      line-height: 46px;
+      background: ${t?e.colors.dim:e.colors.bg_btn_primary};
+
+      &:hover,
+      &:active,
+      &:visited {
+        color: ${e.colors.font_white};
+      }
+    `,dotlist:K.iv`
+      margin: 60px 0px 45px;
+      text-align: left;
+      color: ${e.colors.font_3};
+      font-size: 13px;
+      line-height: 19px;
+    `,support:K.iv`
+      color: ${e.colors.font_2};
+    `});var Wn=me((e=>{const t=(0,L.Fg)(),{t:n}=(0,j.$)("global");return(0,o.BX)(o.HY,{children:[(0,o.tZ)("header",{className:"underB",children:(0,o.tZ)("h1",{children:(0,o.tZ)(Kn.rU,{to:c.ev4,title:"Upbit",children:"Upbit"})})}),(0,o.tZ)("section",{className:"container",children:(0,o.BX)(q.Kq,{direction:"column",sx:Gn(t).container,className:"loginB",children:[(0,o.tZ)(q.xu,{sx:Gn(t).title,children:(0,o.tZ)(q.g6,{text:n("users.twoFactorAuth.requireTitle")})}),(0,o.tZ)(q.xu,{sx:Gn(t).desc,children:(0,o.tZ)(q.g6,{text:n("users.twoFactorAuth.requireDesc")})}),(0,o.tZ)(q.zx,{sx:Gn(t).button,href:c.CCD,onClick:()=>{(0,Xe.d)("안내팝업","","안내화면",{category:"OTP등록안내화면",eventDetail:"확인_btn_클릭"})},children:n("ui.confirmButton")}),(0,o.tZ)(An.Gj,{itemGap:2,dotPosition:"top",sx:Gn(t).dotlist,children:(0,o.tZ)(An.b$,{children:n("users.twoFactorAuth.requireSubDesc")})})]})})]})}));const Gn=e=>({container:K.iv`
+      background: ${e.colors.bg};
+      text-align: center;
+      gap: 0px;
+      padding: 0px 40px;
+      box-sizing: border-box;
+    `,title:K.iv`
+      font-weight: 400;
+      font-size: 27px;
+      line-height: 40px;
+      margin-top: 40px;
+      color: ${e.colors.font_1};
+      text-align: left;
+    `,desc:K.iv`
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 24px;
+      color: ${e.colors.font_2};
+      margin-top: 16px;
+      text-align: left;
+    `,button:K.iv`
+      margin-top: 124px;
+      background: ${e.colors.bg_btn_primary};
+      border: unset;
+      border-radius: 0px;
+      height: 46px;
+      line-height: 46px;
+
+      &:hover,
+      &:active,
+      &:visited {
+        color: ${e.colors.font_white};
+      }
+    `,dotlist:K.iv`
+      margin: 60px 0px 45px;
+      text-align: left;
+      color: ${e.colors.font_3};
+      font-size: 13px;
+    `});var Un=n(47646);var Qn=()=>{const{basicPopup:e,errorPopup:t,email:n,password:i,isValidEmail:r,recaptchaToken:a,country:s,verificationFailedMessage:l,recaptchaSiteKey:u,setRecaptchaToken:p,handleClickSignin:d,handleInputChange:h,handleInputReset:f}=Lt(),{t:g}=(0,j.$)("global"),x=!(n&&i&&r&&a),m=(0,L.Fg)();return(0,o.BX)(o.HY,{children:[(0,o.tZ)("header",{className:"underB",children:(0,o.tZ)("h1",{children:(0,o.tZ)(Kn.rU,{to:c.ev4,title:"Upbit",children:"Upbit"})})}),(0,o.BX)("section",{className:"container",children:[e&&(0,o.tZ)(qn.f,{payload:e}),t&&(0,o.tZ)(Un.O,{payload:t}),(0,o.BX)(q.Kq,{direction:"column",sx:Yn(m).container,className:"loginB",children:[(0,o.tZ)(An.nv,{autoFocus:!0,value:n,error:!!n&&!r,sx:Yn(m).email,errorMessage:n&&!r?g("users.signIn.invalidEmail"):"",placeholder:g("users.signIn.inputEmail"),onChange:h,onClickReset:()=>f({name:"email"})}),(0,o.tZ)(An.nv,{value:i,name:"password",type:"password",error:!!l,sx:Yn(m).password,errorMessage:l||"",placeholder:g("users.signIn.inputPassword"),onChange:h,onClickReset:()=>f({name:"password"})}),(0,o.tZ)(Bt,{center:!0,sitekey:u,callback:e=>{p(e)},expiredCallback:()=>{p("")},country:s}),(0,o.tZ)(q.zx,{disabled:x,sx:Yn(m,x).button,onClick:()=>d(x),children:g("users.signIn.signInSubmit")}),(0,o.BX)(An.Gj,{itemGap:2,dotPosition:"top",sx:Yn(m).dotlist,children:[(0,o.tZ)(An.b$,{children:g("users.signIn.freezeAccount")}),(0,o.BX)(An.b$,{children:[(0,o.tZ)(q.xu,{children:g("users.signIn.inquirePassword")}),(0,o.tZ)(q.xu,{sx:Yn(m).support,children:g("users.signIn.support")})]})]})]})]})]})};const Yn=(e,t)=>{const n=K.iv`
+    text-align: left;
+
+    input {
+      width: inherit;
+
+      &::placeholder {
+        transform: scale(1);
+        transform-origin: 0 50%;
+      }
+    }
+  `;return{container:K.iv`
+      background: ${e.colors.bg};
+      text-align: center;
+      gap: 0px;
+      padding: 0px 40px;
+      box-sizing: border-box;
+    `,email:K.iv`
+      margin-top: 40px;
+      ${n}
+    `,password:K.iv`
+      margin-top: 18px;
+      margin-bottom: 40px;
+      ${n}
+    `,button:K.iv`
+      margin-top: 40px;
+      border-radius: 0px;
+      height: 46px;
+      line-height: 46px;
+      background: ${t?e.colors.dim:e.colors.bg_btn_primary};
+      border: unset;
+
+      &:hover,
+      &:active,
+      &:visited {
+        color: ${e.colors.font_white};
+      }
+    `,dotlist:K.iv`
+      margin: 60px 0px 45px;
+      text-align: left;
+      color: ${e.colors.font_3};
+      font-size: 13px;
+      line-height: 19px;
+    `,support:K.iv`
+      color: ${e.colors.font_2};
+    `}};var eo=n(83524),to=n.n(eo);class no extends i.Component{render(){return i.Children.only(this.props.children)}}var oo=to()((function(e){const t=e[e.length-1];if(t)return t.className}),(function(e){document.body&&(document.body.className=e||"")}))(no);const io=()=>{const{qrcodeData:e,remainedSeconds:t,theme:n,authorizeNumber:i,popupData:r,setPopupData:a,getLoginQRCode:c,qrcodeUrl:s}=Zn();if(!e)return null;const l=ro(n),u=t>0,p=Jt()(Ft()(t/60)),d=Jt()(Ft()(t%60)),h=s?`${qt()(p,2,"0")}:${qt()(d,2,"0")}`:"--:--";return(0,o.tZ)(oo,{children:(0,o.BX)(An.xu,{sx:l.containerStyle,children:[(0,o.tZ)(An.xu,{sx:l.TitleStyle,children:"업비트 앱으로 간편 로그인해 주세요."}),(0,o.tZ)(An.xu,{sx:l.SubTitleStyle,children:"업비트 앱으로 아이디와 비밀번호 입력 없이 로그인 할 수 있어요."}),(0,o.tZ)(An.Kq,{sx:ro(n).qrCodeBox,direction:"column",spacing:8,justifyContent:"center",alignItems:"center",children:s?(0,o.tZ)(Se.Z,{value:s,size:160,includeMargin:!0}):null}),(0,o.tZ)(An.xu,{sx:l.authorizeContainerStyle(u),children:i}),u?(0,o.BX)(An.zx,{sx:l.buttonStyle,children:["앱으로 로그인 ",h]}):(0,o.tZ)(An.zx,{onClick:e=>{e.preventDefault(),c()},sx:l.buttonStyle,children:"인증번호 갱신"}),(0,o.BX)(An.dq,{sx:l.numberListStyle,children:[(0,o.tZ)(An.eI,{children:"앱으로 로그인 버튼을 눌러주세요."}),(0,o.tZ)(An.eI,{children:"업비트 앱 > 로그인 요청에서 인증코드를 선택해 주세요."})]}),(0,o.BX)(An.Kq,{direction:"row",spacing:4,sx:l.buttonContainerStyle,children:[(0,o.BX)("a",{href:gn,target:"_blank",rel:"noreferrer",onClick:()=>{(0,Xe.d)("로그인화면","","Mobile_로그인화면 ",{category:"APP설치_btn",eventDetail:"안드로이드앱_btn_클릭"})},children:[(0,o.tZ)(An.JO,{type:"ico_google_play",width:14,height:15}),"안드로이드 앱"]}),(0,o.BX)("a",{href:xn,target:"_blank",rel:"noreferrer",onClick:()=>{(0,Xe.d)("로그인화면","","Mobile_로그인화면 ",{category:"아이폰앱설치_btn",eventDetail:"아이폰앱설치_btn"})},children:[(0,o.tZ)(An.JO,{type:"appmarket_ios",width:14,height:17}),"아이폰 앱"]})]})]})})},ro=e=>({containerStyle:K.iv`
+      background: ${e.colors.bg};
+      display: flex;
+      flex-direction: column;
+      padding: 45px 40px;
+      font-family: 'Noto Sans KR';
+      font-style: normal;
+    `,TitleStyle:K.iv`
+      font-weight: 400;
+      font-size: 27px;
+      line-height: 40px;
+      color: ${e.colors.font_1};
+    `,SubTitleStyle:K.iv`
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 24px;
+      color: ${e.colors.font_2};
+      margin-top: 16px;
+    `,authorizeContainerStyle:t=>K.iv`
+        margin-top: 50px;
+        background: ${e.colors.bg_title};
+        border-radius: 2px;
+        font-weight: 700;
+        font-size: 27px;
+        line-height: 40px;
+        color: ${t?e.colors.point_sub:e.colors.dim};
+        text-align: center;
+        letter-spacing: 10px;
+        width: 100%;
+        min-height: 60px;
+        padding: 10px 0px;
+        box-sizing: border-box;
+      `,buttonStyle:K.iv`
+      margin-top: 20px;
+      background: ${e.colors.bg_btn_primary};
+      color: ${e.colors.font_white};
+      font-weight: 400;
+      font-size: 16px;
+      height: 50px;
+      line-height: 50px;
+
+      &:hover,
+      &:active,
+      &:visited {
+        color: ${e.colors.font_white};
+      }
+    `,numberListStyle:K.iv`
+      font-weight: 400;
+      font-size: 15px;
+      line-height: 22px;
+      color: ${e.colors.font_2};
+      margin-top: 30px;
+
+      li::before {
+        top: 0px;
+      }
+
+      li + li {
+        margin-top: 4px;
+      }
+    `,buttonContainerStyle:K.iv`
+      font-weight: 400;
+      font-size: 13px;
+      line-height: 19px;
+      color: ${e.colors.font_2};
+      width: 100%;
+      text-align: center;
+      margin-top: 50px;
+
+      a {
+        flex: 1;
+        padding: 11px 0px;
+        position: relative;
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+        border: 1px solid ${e.colors.line_dark};
+        border-radius: 2px;
+      }
+    `,qrCodeBox:K.iv`
+      margin-top: 40px;
+    `});var ao=()=>{const e=(0,L.Fg)(),t=K.iv`
+    background: ${e.colors.bg};
+    display: flex;
+    flex-direction: column;
+    padding: 128px 40px 78px;
+    font-family: 'Noto Sans KR';
+    font-style: normal;
+  `,n=K.iv`
+    font-weight: 400;
+    font-size: 18px;
+    text-align: center;
+    line-height: 27px;
+    color: ${e.colors.font_1};
+  `,r=K.iv`
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 22px;
+    text-align: center;
+    color: ${e.colors.font_2};
+    margin-top: 16px;
+  `,a=K.iv`
+    margin-top: 20px;
+    background: ${e.colors.bg_btn_primary};
+    color: ${e.colors.font_white};
+    font-weight: 400;
+    font-size: 16px;
+    height: 50px;
+    line-height: 50px;
+
+    &:hover,
+    &:active,
+    &:visited {
+      color: ${e.colors.font_white};
+    }
+  `,s=K.iv`
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 19px;
+    color: ${e.colors.font_2};
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+
+    a {
+      flex: 1;
+      padding: 11px 0px;
+      position: relative;
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      border: 1px solid ${e.colors.line_dark};
+      border-radius: 2px;
+    }
+  `,l=(0,i.useCallback)((()=>{location.href="https://upbit.onelink.me/dH32/j3jsnszb"}),[]);return(0,o.BX)(o.HY,{children:[(0,o.tZ)("header",{className:"underB",children:(0,o.tZ)("h1",{children:(0,o.tZ)(Kn.rU,{to:c.ev4,title:"Upbit",children:"Upbit"})})}),(0,o.BX)(q.xu,{sx:t,children:[(0,o.tZ)(q.xu,{sx:n,children:"QR로그인 안내"}),(0,o.BX)(q.xu,{sx:r,children:["업비트 앱 > 내 정보 > 우측 상단의 ",(0,o.tZ)(Sn,{}),(0,o.tZ)("br",{}),"아이콘을 눌러 QR 코드를 스캔해 주세요."]}),(0,o.tZ)(An.zx,{sx:a,onClick:l,children:"업비트 앱 열기"}),(0,o.BX)(q.Kq,{direction:"row",spacing:4,sx:s,children:[(0,o.BX)("a",{href:_e.rR,target:"_blank",rel:"noreferrer",children:[(0,o.tZ)(q.JO,{type:"ico_google_play",width:14,height:15}),"안드로이드 앱"]}),(0,o.BX)("a",{href:_e.uq,target:"_blank",rel:"noreferrer",children:[(0,o.tZ)(q.JO,{type:"appmarket_ios",width:14,height:17}),"아이폰 앱"]})]})]})]})},co=n(62042),so=n(75982),lo=n(37059);const uo=()=>{const e=(0,G.useDispatch)();if(lo.t)return null;return(0,o.tZ)("div",{css:K.iv`
+        position: relative;
+      `,children:(0,o.tZ)("div",{css:K.iv`
+          position: absolute;
+          top: -150px;
+          left: 10px;
+          a {
+            color: red;
+          }
+        `,children:(0,o.tZ)(An.zx,{onClick:()=>{e((0,so.VF)(se.zQ))},children:"[dev]QR코드"})})})};var po=n(82938),ho=Object.getOwnPropertySymbols,fo=Object.prototype.hasOwnProperty,go=Object.prototype.propertyIsEnumerable;const xo=()=>{const e=(0,a.useHistory)(),{mobileWebAuth:t}=kn(),[n,o]=(0,i.useState)(),{location:{search:c}}=(0,po.Z)(),s=(0,i.useMemo)((()=>{try{const e=r.parse(c).web_login_token;return tt()(e)?null:e}catch(e){return null}}),[c]),l=(0,i.useMemo)((()=>{try{const e=r.parse(c).state;if(tt()(e))return{};const t=lt(decodeURIComponent(String(e)));return st(t)}catch(e){return{}}}),[c]);return(0,i.useEffect)((()=>{if(s){const n=l,{checkedLongSession:i=!1}=n;((e,t)=>{var n={};for(var o in e)fo.call(e,o)&&t.indexOf(o)<0&&(n[o]=e[o]);if(null!=e&&ho)for(var o of ho(e))t.indexOf(o)<0&&go.call(e,o)&&(n[o]=e[o])})(n,["checkedLongSession"]);t({token:s,checkedLongSession:i}).then((t=>{"error"in t&&o({setPayload:o,title:"안내",body:t.error.message,onClose:()=>e.replace(se.tH)})}))}}),[l,s]),{loginErrorPopupPayload:n}};var mo=Object.defineProperty,vo=Object.defineProperties,yo=Object.getOwnPropertyDescriptors,bo=Object.getOwnPropertySymbols,wo=Object.prototype.hasOwnProperty,ko=Object.prototype.propertyIsEnumerable,Co=(e,t,n)=>t in e?mo(e,t,{enumerable:!0,configurable:!0,writable:!0,value:n}):e[t]=n;var _o=()=>{const{loginErrorPopupPayload:e}=xo(),{loginSuccess:t,checkedLongSession:n,openLongSessionDesc:c,oauthApplicationName:s,oauthApplicationLogoUri:l,handleClickCheck:u,handleClickClose:p,basicPopup:d,confirmPopup:h,handleClickCompanySignin:f}=Dn(),g=(0,a.useHistory)(),x=(0,L.Fg)();(0,i.useEffect)((()=>{t&&g.replace(se.Ko)}));const m=(()=>{var e;const t=window.navigator.userAgent;if(t.indexOf("NAVER")>=0)return"NAVER";const n=null!=(e=new(z())(t).getBrowser().name)?e:"",o=A()(n);return o("Chrome")?"CHROME":o("Samsung Browser")?"SAMSUNG":o("Mobile Safari")?"SAFARI":o("Whale Browser")?"WHALE":o("Brave")?"BRAVE":n.indexOf("Firefox")>=0?"FIREFOX":void 0})(),v=(0,i.useMemo)((()=>{const e=r.parse(window.location.search),t=Nn((o=((e,t)=>{for(var n in t||(t={}))wo.call(t,n)&&Co(e,n,t[n]);if(bo)for(var n of bo(t))ko.call(t,n)&&Co(e,n,t[n]);return e})({},e),vo(o,yo({checkedLongSession:n}))))||"";var o;const i={browser:m,state:t,exchangeCode:"kr",redirect_host:location.hostname};return`https://upbit.onelink.me/dH32/u6mcpwy2?${r.stringify(i,{skipNull:!0})}`}),[m,n]);return(0,o.BX)("div",{children:[d&&(0,o.tZ)(qn.Z,{payload:d}),e&&(0,o.tZ)(qn.Z,{payload:e}),h&&(0,o.tZ)(co.Z,{payload:h}),(0,o.tZ)("header",{className:"underB",children:(0,o.tZ)("h1",{children:(0,o.tZ)(Kn.rU,{to:se.m_,title:"Upbit",children:"Upbit"})})}),(0,o.tZ)("section",{className:"container",children:(0,o.BX)(q.Kq,{direction:"column",sx:Zo(x).container,className:"loginB",children:[(0,o.BX)("span",{className:"btn",style:{width:"100%",textAlign:"center"},children:[s?(0,o.tZ)("img",{src:l,alt:"로고이미지",className:"OauthLogin__logo",height:"28",style:{marginTop:"45px"}}):(0,o.BX)(q.xu,{className:"Caution",sx:Zo(x).urlContainer,children:[(0,o.tZ)("p",{children:"방문하신 사이트의 주소가 일치하는지 확인해주세요."}),(0,o.BX)("a",{href:"",children:[(0,o.tZ)("i",{className:"lockIco",children:"-"}),(0,o.tZ)("em",{children:"https:"}),"//upbit.com"]})]}),(0,o.tZ)(q.xu,{sx:Zo(x).title,children:s?(0,o.BX)(o.HY,{children:["업비트 계정으로 ",s,(0,o.tZ)("br",{}),"서비스를 이용하실 수 있습니다."]}):(0,o.BX)(o.HY,{children:["업비트 계정으로 간편하고",(0,o.tZ)("br",{}),"안전하게 로그인할 수 있습니다."]})}),(0,o.tZ)(q.xu,{children:(0,o.tZ)("a",{css:Zo(x).buttonUpbit,href:v,target:"_blank",rel:"noreferrer",children:"업비트 로그인"})}),(0,o.tZ)(uo,{}),(0,o.BX)(q.xu,{className:Vt()({chkB:!0,on:n}),style:{marginTop:"16px",padding:"0px"},children:[(0,o.tZ)("label",{onClick:u,css:Zo(x).checkboxLabel,children:"로그인 상태 유지"}),c&&(0,o.BX)("em",{children:[(0,o.tZ)("q",{className:"close",onClick:p}),"로그인 상태 유지시,",(0,o.tZ)("br",{}),(0,o.tZ)("strong",{children:"24시간동안 로그인이 유지"}),"됩니다.",(0,o.tZ)("br",{}),"안전한 거래와 개인정보 보호를 위해",(0,o.tZ)("br",{}),"개인용 디바이스에서만 사용하시기 ",(0,o.tZ)("br",{}),"바랍니다."]})]})]}),(0,o.tZ)(q.K4,{sx:Zo(x).otherLogin,children:(0,o.tZ)(q.px,{onClick:f,children:"법인회원 로그인"})})]})})]})};const Zo=e=>({container:K.iv`
+      align-items: center;
+      gap: 0px;
+    `,urlContainer:K.iv`
+      width: 100%;
+      text-align: left;
+    `,title:K.iv`
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 30px;
+      text-align: center;
+      margin-top: 30px;
+      color: ${e.colors.font_1};
+    `,buttonUpbit:K.iv`
+      background: ${e.colors.point_main};
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 46px;
+      color: ${e.colors.font_white};
+      width: 280px;
+      height: 46px;
+      margin-top: 24px;
+      margin-left: 50%;
+      transform: translate(-50%);
+      display: block;
+      border-radius: 0px;
+
+      &:hover,
+      &:active,
+      &:visited {
+        color: ${e.colors.font_white};
+      }
+    `,checkboxLabel:K.iv`
+      font-weight: 400;
+      font-size: 13px;
+      line-height: 19px;
+      padding-left: 26px;
+    `,otherLogin:K.iv`
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 21px;
+      height: auto;
+      margin-bottom: 45px;
+      display: flex;
+      gap: 8px;
+      margin-top: 80px;
+      text-decoration: underline;
+
+      li {
+        padding: 0px;
+        margin: 0px;
+        border: unset;
+
+        & > a > span {
+          color: ${e.colors.font_2};
+        }
+
+        &:first-of-type > a > span {
+          margin-left: 0px;
+        }
+      }
+
+      li + li::before {
+        content: '';
+        width: 1px;
+        height: 12px;
+        background: ${e.colors.line_dark};
+      }
+    `});var So=e=>(Eo(e),(0,o.tZ)("div",{children:(0,o.BX)(a.Switch,{children:[(0,o.tZ)(a.Redirect,{exact:!0,from:se.tH,to:se.d8}),(0,o.tZ)(a.Route,{exact:!0,path:se.d8,component:_o}),(0,o.tZ)(a.Route,{exact:!0,path:se.zQ,component:io}),(0,o.tZ)(a.Route,{exact:!0,path:se.WG,component:ao}),(0,o.tZ)(a.Redirect,{exact:!0,from:se.P5,to:se.Sy}),(0,o.tZ)(a.Route,{exact:!0,path:se.Sy,component:Qn}),(0,o.tZ)(a.Route,{exact:!0,path:se.Ko+"/:txid",component:jn}),(0,o.tZ)(a.Route,{exact:!0,path:se.U$,component:Wn})]})})),Po=Object.defineProperty,$o=Object.getOwnPropertySymbols,Bo=Object.prototype.hasOwnProperty,Ao=Object.prototype.propertyIsEnumerable,Oo=(e,t,n)=>t in e?Po(e,t,{enumerable:!0,configurable:!0,writable:!0,value:n}):e[t]=n,Ro=(e,t)=>{for(var n in t||(t={}))Bo.call(t,n)&&Oo(e,n,t[n]);if($o)for(var n of $o(t))Ao.call(t,n)&&Oo(e,n,t[n]);return e};let To=c.R41,zo={country:"kr",language:"ko"};const Eo=e=>{const{fetchTimestamp:t}=F(),{pathname:n,search:o}=(0,a.useLocation)(),{locale:s}=e,l=()=>{return e=void 0,n=null,o=function*(){t()},new Promise(((t,i)=>{var r=e=>{try{c(o.next(e))}catch(e){i(e)}},a=e=>{try{c(o.throw(e))}catch(e){i(e)}},c=e=>e.done?t(e.value):Promise.resolve(e.value).then(r,a);c((o=o.apply(e,n)).next())}));var e,n,o};return(0,i.useEffect)((()=>{zo=s,To=c.R41,l()}),[s]),(0,i.useEffect)((()=>{const e=r.parse(o);(null==e?void 0:e.pathname)&&(To=e.pathname)}),[n,o]),{}},Io=()=>To,Xo=()=>zo,Lo=()=>zo.country,Do=e=>{const{locale:t,callback:n,ccxHost:i}=e,{country:r}=t;return(0,o.tZ)(o.HY,{children:(0,o.tZ)(V,{country:r,ccxHost:i,callback:n,children:(0,o.tZ)(So,Ro({},e))})})},No=e=>{const{locale:t,callback:n,ccxHost:i}=e,{country:r}=t;return(0,o.tZ)(o.HY,{children:(0,o.tZ)(V,{country:r,ccxHost:i,callback:n,children:(0,o.tZ)(Fn,Ro({},e))})})}}},function(e){e.O(0,[6991,1854,8264,2985,2495,3983,6427,1728,8812,4106,5449,9557,8384,4754,2492,2167,9351,3668],(function(){return t=57339,e(e.s=t);var t}));e.O()}]);
+//# sourceMappingURL=sri-v2-KR_PC-9a8b795a-bundle-da7c0d56e5f8ae49d47c.js.map

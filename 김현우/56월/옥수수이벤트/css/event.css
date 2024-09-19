@@ -1,0 +1,233 @@
+/*웹폰트-배달의민족 도현체*/
+@font-face {
+    font-family: 'BMDOHYEON';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/BMDOHYEON.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+* { padding: 0; margin: 0;}
+a { text-decoration: none;}
+
+/*상단영역*/
+#top {
+    width: 650px; height: 180px;
+    background: url(../images/top_bg.jpg);
+    margin: 0 auto;
+    text-align: center;
+}
+#top h2 {
+    padding-top: 30px;
+    color:#fff; font-size: 48px;
+    letter-spacing: -2px;
+    font-family: 'BMDOHYEON';
+    font-weight: normal;
+}
+#top p.line {
+    width: 280px; height: 1px;
+    background: #fff;
+
+    margin: 15px auto;
+}
+#top p.txt {
+    font-family: 'BMDOHYEON';
+    color:#fff;
+    font-size: 26px;
+    letter-spacing: -1px;
+}
+
+/*메인이미지*/
+#main {
+    width: 650px; height: 563px;
+    margin: 0 auto;
+}
+
+/*유료 옥수수 포인트*/
+#info1 {
+    width: 650px; height: 150px;
+    background: #ffc300 url(../images/banner_txt_linebg.png) no-repeat 130px 80px;
+    margin: 0 auto;
+    text-align: center;
+}
+#info1 p {
+    padding-top: 40px;
+
+    color:#735a18;
+    font-size: 24px;
+    letter-spacing: -2px;
+}
+#info1 p span {
+    font-weight: bold;
+}
+
+/*신상 카카오 이모티콘*/
+#info2 {
+    width: 650px; height: 240px;
+    background: #ffc300;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#info2 p.line {
+    width: 540px;
+    height: 1px;
+    background: #dfb201;
+    margin: 0 auto;
+    margin-top: 20px;
+    display: inline-block;
+}
+#info2 p.txt {
+    padding-top: 30px;
+
+    color:#231f20;
+    font-size: 26px;
+    font-family: 'BMDOHYEON';
+    letter-spacing: -1px;
+
+}
+#info2 h2 {
+    padding-top: 10px;
+
+    color:#6edbfc;
+    font-size: 58px;
+    letter-spacing: -3px;
+    font-family: 'BMDOHYEON';
+    font-weight: normal;
+    text-shadow: 5px 5px 1px #222;
+    /*x방향 y방향 그림자흐림정도 색상*/
+}
+#info2 h4 {
+    padding-top: 10px;
+
+    color:#725a1a;
+    font-size: 20px;
+    letter-spacing: -2px;
+    font-weight: normal;
+}
+
+/*애니메이션 배너*/
+#ani_banner {
+    width: 650px; height: 336px;
+    margin: 0 auto;
+}
+/*문화혜택 제목*/
+#section1 {
+    width: 650px; height: 130px;
+    background: #ffd200;
+    margin: 0 auto;
+    text-align: center;
+    line-height: 130px;
+
+}
+#section1 p {
+    color:#fff;
+    font-size: 46px;
+    font-family: 'BMDOHYEON';
+    letter-spacing: -2px;
+    text-shadow: 5px 5px 1px #222;
+
+}
+#section1 p span {
+    color:#a0ea01;
+}
+
+/*문화혜택 배너*/
+#section2 {
+    width: 650px; height: 400px;
+    background: pink;
+    margin: 0 auto;
+
+    text-align: center;
+}
+
+#section2 div.box {
+    width: 570px; height: 150px;
+    background: cyan;
+    text-align: center;
+
+    border-radius: 80px;
+
+    display: inline-block;
+    margin-top: 30px;
+}
+
+#section2 div.box div {
+    display: inline-block;
+    vertical-align: middle;
+
+    margin: 20px 10px;
+
+}
+#section2 div.box div.left {
+    width: 110px; height: 110px;
+    background: yellow;
+
+    border-radius: 50%; /*원모양만들기*/
+}
+
+#section2 div.box div.right {
+    width: 370px; height: 110px;
+    background: greenyellow;
+    text-align: left;
+}
+
+#section2 div.box div.right h2 {
+    padding-left: 10px;
+
+    color:#333; font-size: 30px;
+    letter-spacing: -1px; font-weight: bold;
+}
+#section2 div.box div.right p {
+    padding-left: 10px;
+    padding-top: 20px;
+
+    color:#666; font-size: 18px;
+    letter-spacing: -1px; font-weight: normal;
+}
+
+/*혜택확인 글자*/
+#section3 {
+    width: 650px; height: 80px;
+    background: linear-gradient(to right, #ffd302, #ffefa2);
+    margin: 0 auto;
+    text-align: center;
+    line-height: 80px;
+    
+}
+
+#section3 p {
+    color:#222; font-size: 30px;
+    letter-spacing: -2px;
+    font-weight: bold;
+}
+
+/*하단영역*/
+#down {
+    width: 650px; height: 180px;
+    background: cyan;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#down p.btn {
+    width: 280px; height: 80px;
+    background: #222; color:#fff;
+    border-radius: 50px;
+
+    display: inline-block;
+    vertical-align: middle;
+
+    margin: 50px 10px;
+    line-height: 80px;
+
+    font-size: 32px; letter-spacing: -3px;
+    font-weight: bold;
+    border:2px solid #222;
+    cursor: pointer;
+}
+#down p.btn:hover {
+    border:2px solid #222;
+    background: transparent;
+    color: #333;
+}
